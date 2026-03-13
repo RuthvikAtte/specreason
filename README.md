@@ -32,6 +32,20 @@ OUTPUT_DIR=./results
 python spec_reason.py --dataset_name aime --problem_id 60 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --output_dir "$OUTPUT_DIR"
 ```
 
+### AIME question browser UI
+
+You can browse the full AIME dataset in a simple local web app:
+
+```shell
+pip install -r requirements.txt
+streamlit run aime_viewer.py
+```
+
+The app lets you:
+- filter questions with text search
+- select by `problem_id` (mapped to `60-89` for this dataset split)
+- view the official answer in a collapsible panel
+
 ## References
 
 ```
