@@ -43,16 +43,19 @@ def load_dataset_records(dataset_choice):
                 "answer": ans,
             })
     elif dataset_choice == "GPQA Diamond":
-        ds = load_dataset("Idavidrein/gpqa", "gpqa_diamond")["train"]
-        for idx, item in enumerate(ds):
-            problem_text = item.get("Question", "")
-            ans = f"Correct: {item.get('Correct Answer', '')}\nIncorrect 1: {item.get('Incorrect Answer 1', '')}\nIncorrect 2: {item.get('Incorrect Answer 2', '')}\nIncorrect 3: {item.get('Incorrect Answer 3', '')}"
-            records.append({
-                "index": idx,
-                "problem_id": idx,
-                "problem": problem_text,
-                "answer": ans,
-            })
+        try:
+            ds = load_dataset("Idavidrein/gpqa", "gpqa_diamond")["train"]
+            for idx, item in enumerate(ds):
+                problem_text = item.get("Question", "")
+                ans = f"Correct: {item.get('Correct Answer', '')}\nIncorrect 1: {item.get('Incorrect Answer 1', '')}\nIncorrect 2: {item.get('Incorrect Answer 2', '')}\nIncorrect 3: {item.get('Incorrect Answer 3', '')}"
+                records.append({
+                    "index": idx,
+                    "problem_id": idx,
+                    "problem": problem_text,
+                    "answer": ans,
+                })
+        except Exception as e:
+            st.error(f"Failed to load GPQA Diamond dataset. The dataset might be behind a gate. Details: {e}")
             
     return records
 
