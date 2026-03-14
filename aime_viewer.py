@@ -290,22 +290,24 @@ if os.path.exists(pickle_path):
             score_str = "⚪ Score: N/A"
             step_bg_color = "rgba(128, 128, 128, 0.1)" # Transparent grey
             
-        with st.expander(f"Step {step['step_id']} ({score_str})"):
-            small_toks = step.get('num_output_tokens_small') or 0
-            base_toks = step.get('num_output_tokens_base') or 0
-            st.markdown(f"**Output Tokens (Total):** {small_toks + base_toks} &mdash; *(Small: {small_toks} | Base: {base_toks})*")
-            st.markdown(f"**Step Time:** {step.get('step_time', 0):.2f}s")
-            
-            c1, c2 = st.columns(2)
-            with c1:
-                st.markdown("### Small Model Output")
-                render_full_text(step.get('small_model_step'), step_bg_color)
-            with c2:
-                st.markdown("### Base Model Output")
-                render_full_text(step.get('base_model_step'), step_bg_color)
-            
-            if step.get('justification'):
-                st.markdown("#### Evaluation Justification")
-                render_full_text(step['justification'], "rgba(128, 128, 128, 0.1)")
+        st.markdown("---")
+        st.subheader(f"Step {step['step_id']} ({score_str})")
+        
+        small_toks = step.get('num_output_tokens_small') or 0
+        base_toks = step.get('num_output_tokens_base') or 0
+        st.markdown(f"**Output Tokens (Total):** {small_toks + base_toks} &mdash; *(Small: {small_toks} | Base: {base_toks})*")
+        st.markdown(f"**Step Time:** {step.get('step_time', 0):.2f}s")
+        
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown("#### Small Model Output")
+            render_full_text(step.get('small_model_step'), step_bg_color)
+        with c2:
+            st.markdown("#### Base Model Output")
+            render_full_text(step.get('base_model_step'), step_bg_color)
+        
+        if step.get('justification'):
+            st.markdown("#### Evaluation Justification")
+            render_full_text(step['justification'], "rgba(128, 128, 128, 0.1)")
 else:
     st.write("No reasoning trace found for this problem yet. Click 'Run' above.")
