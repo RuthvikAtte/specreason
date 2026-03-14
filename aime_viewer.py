@@ -163,6 +163,107 @@ if os.path.exists(pickle_path):
     st.write(f"**Total Steps Taken:** {len(metadata_list)}")
     st.write(f"**Total Output Tokens:** {total_small_tokens + total_base_tokens} (Small: {total_small_tokens} | Base: {total_base_tokens})")
     
+    def extract_boxed(text):
+        if not text: return None
+        marker = r'\boxed{'
+        idx = text.rfind(marker)  # rfind gets the LAST \boxed{}
+        if idx == -1:
+            return None
+        
+        start = idx + len(marker)
+        depth = 1
+        i = start
+        
+        while i < len(text) and depth > 0:
+            if text[i] == '{':
+                depth += 1
+            elif text[i] == '}':
+                depth -= 1
+            i += 1
+        
+        if depth == 0:
+            return text[start:i-1].strip()
+        
+        return None
+
+    # Check if ANY step has \boxed{} and extract the very last one
+    extracted_answer = None
+    final_output = ""
+    for step in reversed(metadata_list):
+        output = step.get('base_model_step') or step.get('small_model_step') or ""
+        ans = extract_boxed(output)
+        if ans is not None:
+            extracted_answer = ans
+            final_output = output
+            break
+    
+    last_step = metadata_list[-1]
+    
+    if extracted_answer is not None:
+        st.markdown(f"### Result: Model Answered ` {extracted_answer} `")
+        
+        # We need to extract the target answer too, because MATH-500 provides full solutions that end in \boxed{}
+        official_ans_full = str(selected['answer']).strip()
+        official_ans_boxed = extract_boxed(official_ans_full)
+        target_ans = official_ans_boxed if official_ans_boxed is not None else official_ans_full
+        
+        def normalize_math(s):
+            if not s: return ""
+            s = str(s).strip()
+            s = s.replace(r"\dfrac", r"\frac")
+            s = s.replace(r"\tfrac", r"\frac")
+            s = s.replace(r"\left", "").replace(r"\right", "")
+            s = s.replace(" ", "")
+            return s
+            
+        clean_extracted = normalize_math(extracted_answer)
+        clean_target = normalize_math(target_ans)
+        
+        # Verify mathematically
+        is_correct = False
+        try:
+            from math_verify import verify, parse
+            
+            is_correct = bool(verify(parse(clean_extracted), parse(clean_target)))
+        except Exception:
+            pass
+            
+        if not is_correct:
+            # Fallback string matching if math_verify fails or errors out
+            is_correct = clean_extracted == clean_target
+        
+        if is_correct:
+            st.success(f"✅ Generated Answer Matches Official Answer: `{target_ans}`")
+        else:
+            st.error(f"❌ Generated Answer (`{extracted_answer}`) does NOT strictly match Official Answer (`{target_ans}`)")
+            
+        if last_step.get('stop_reason') == 'budget':
+            st.warning("*(Note: Token budget exceeded limit on this run! Evaluated against the last valid box found.)*")
+            
+    elif get_arg_dataset_name(dataset_choice) == "aime" and last_step.get('stop_reason') == 'budget':
+        # Specific heuristic for AIME where answer is always a number at the end of the thought process
+        last_str = last_step.get('base_model_step') or last_step.get('small_model_step') or ""
+        import re
+        # Look for the last number that appears in the last step's text
+        numbers_found = re.findall(r'\b\d+\b', last_str)
+        if numbers_found:
+            heuristic_ans = numbers_found[-1]
+            st.markdown(f"### Result: Model implicitly landed on ` {heuristic_ans} `")
+            st.warning("*(Note: Token budget exceeded! No `\\boxed{}` found, so this was heuristically extracted as the last number generated.)*")
+
+            official_ans_full = str(selected['answer']).strip()
+            
+            if heuristic_ans == official_ans_full:
+                st.success(f"✅ Heuristic Answer Matches Official Answer: `{official_ans_full}`")
+            else:
+                st.error(f"❌ Heuristic Answer (`{heuristic_ans}`) does NOT strictly match Official Answer (`{official_ans_full}`)")
+        else:
+            st.warning("⚠️ Token budget exceeded limit on this run, NO `\\boxed{answer}` was generated, and no numbers could be found heuristically.")
+    elif last_step.get('stop_reason') == 'budget':
+        st.warning("⚠️ Token budget exceeded limit on this run, and NO \\boxed{answer} was generated anywhere.")
+    else:
+        st.warning("⚠️ No \\boxed{answer} found in completely finished model output.")
+
     def render_full_text(text, bg_color):
         if text:
             # Escape HTML brackets so things like <think> show up properly
