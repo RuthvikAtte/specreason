@@ -91,3 +91,976 @@
 2026-03-15 03:40:39 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.8235 llm=0.0 (14/17 runs correct)
 2026-03-15 03:40:39 [INFO] [61/1] Starting run ...
 2026-03-15 03:40:39 [DEBUG] [61/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:45:16 [INFO] [61/1] Done in 277.31s | correct=None | steps=102 | accepted=29 | rejected=73 | tokens=5267 | stop=finished
+2026-03-15 03:45:16 [DEBUG]   Saved /home/ruthvik/specreason/results/61/1.pickle
+2026-03-15 03:45:16 [INFO] [Problem 61] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=5578.0 | avg_time=308.3905s
+2026-03-15 03:45:16 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.7778 llm=0.0 (14/18 runs correct)
+2026-03-15 03:45:16 [INFO] [61/2] Starting run ...
+2026-03-15 03:45:16 [DEBUG] [61/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:49:55 [INFO] [61/2] Done in 279.27s | correct=None | steps=210 | accepted=118 | rejected=92 | tokens=6509 | stop=finished
+2026-03-15 03:49:55 [DEBUG]   Saved /home/ruthvik/specreason/results/61/2.pickle
+2026-03-15 03:49:55 [INFO] [Problem 61] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=5888.3333 | avg_time=296.8127s
+2026-03-15 03:49:55 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.7368 llm=0.0 (14/19 runs correct)
+2026-03-15 03:49:55 [INFO] [61/3] Starting run ...
+2026-03-15 03:49:55 [DEBUG] [61/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:54:29 [INFO] [61/3] Done in 273.28s | correct=None | steps=189 | accepted=87 | rejected=102 | tokens=6101 | stop=finished
+2026-03-15 03:54:29 [DEBUG]   Saved /home/ruthvik/specreason/results/61/3.pickle
+2026-03-15 03:54:29 [INFO] [Problem 61] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=5941.5 | avg_time=289.5755s
+2026-03-15 03:54:29 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.7 llm=0.0 (14/20 runs correct)
+2026-03-15 03:54:29 [INFO] [61/4] Starting run ...
+2026-03-15 03:54:29 [DEBUG] [61/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:00:46 [INFO] [61/4] Done in 377.11s | correct=None | steps=188 | accepted=59 | rejected=129 | tokens=6613 | stop=finished
+2026-03-15 04:00:46 [DEBUG]   Saved /home/ruthvik/specreason/results/61/4.pickle
+2026-03-15 04:00:46 [INFO] [Problem 61] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=6075.8 | avg_time=305.991s
+2026-03-15 04:00:46 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.6667 llm=0.0 (14/21 runs correct)
+2026-03-15 04:00:46 [INFO] [61/5] Starting run ...
+2026-03-15 04:00:46 [DEBUG] [61/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:06:32 [INFO] [61/5] Done in 345.65s | correct=None | steps=205 | accepted=63 | rejected=142 | tokens=5592 | stop=finished
+2026-03-15 04:06:32 [DEBUG]   Saved /home/ruthvik/specreason/results/61/5.pickle
+2026-03-15 04:06:32 [INFO] [Problem 61] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=5995.1667 | avg_time=311.7068s
+2026-03-15 04:06:32 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.6364 llm=0.0 (14/22 runs correct)
+2026-03-15 04:06:32 [INFO] [61/6] Starting run ...
+2026-03-15 04:06:32 [DEBUG] [61/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:12:09 [INFO] [61/6] Done in 336.8s | correct=None | steps=187 | accepted=47 | rejected=140 | tokens=5889 | stop=finished
+2026-03-15 04:12:09 [DEBUG]   Saved /home/ruthvik/specreason/results/61/6.pickle
+2026-03-15 04:12:09 [INFO] [Problem 61] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=5980.0 | avg_time=314.5234s
+2026-03-15 04:12:09 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.6087 llm=0.0 (14/23 runs correct)
+2026-03-15 04:12:09 [INFO] [61/7] Starting run ...
+2026-03-15 04:12:09 [DEBUG] [61/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:17:08 [INFO] [61/7] Done in 298.92s | correct=None | steps=231 | accepted=112 | rejected=119 | tokens=6311 | stop=finished
+2026-03-15 04:17:08 [DEBUG]   Saved /home/ruthvik/specreason/results/61/7.pickle
+2026-03-15 04:17:08 [INFO] [Problem 61] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=6021.375 | avg_time=311.8984s
+2026-03-15 04:17:08 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.5833 llm=0.0 (14/24 runs correct)
+2026-03-15 04:17:08 [INFO] [61/8] Starting run ...
+2026-03-15 04:17:08 [DEBUG] [61/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:22:14 [INFO] [61/8] Done in 306.46s | correct=None | steps=189 | accepted=75 | rejected=114 | tokens=5856 | stop=finished
+2026-03-15 04:22:14 [DEBUG]   Saved /home/ruthvik/specreason/results/61/8.pickle
+2026-03-15 04:22:14 [INFO] [Problem 61] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=6003.0 | avg_time=310.7113s
+2026-03-15 04:22:14 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.56 llm=0.0 (14/25 runs correct)
+2026-03-15 04:22:14 [INFO] [61/9] Starting run ...
+2026-03-15 04:22:14 [DEBUG] [61/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:27:29 [INFO] [61/9] Done in 314.74s | correct=None | steps=112 | accepted=25 | rejected=87 | tokens=5533 | stop=finished
+2026-03-15 04:27:29 [DEBUG]   Saved /home/ruthvik/specreason/results/61/9.pickle
+2026-03-15 04:27:29 [INFO] [Problem 61] mathverify=0.0 (0/10) | llm=0.0 (0/10) | avg_tokens=5956.0 | avg_time=310.5802s
+2026-03-15 04:27:29 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.5385 llm=0.0 (14/26 runs correct)
+2026-03-15 04:27:29 [INFO] [61/10] Starting run ...
+2026-03-15 04:27:29 [DEBUG] [61/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:33:01 [INFO] [61/10] Done in 332.05s | correct=None | steps=205 | accepted=63 | rejected=142 | tokens=5991 | stop=finished
+2026-03-15 04:33:01 [DEBUG]   Saved /home/ruthvik/specreason/results/61/10.pickle
+2026-03-15 04:33:01 [INFO] [Problem 61] mathverify=0.0 (0/11) | llm=0.0 (0/11) | avg_tokens=5959.1818 | avg_time=312.0395s
+2026-03-15 04:33:01 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.5185 llm=0.0 (14/27 runs correct)
+2026-03-15 04:33:01 [INFO] [61/11] Starting run ...
+2026-03-15 04:33:01 [DEBUG] [61/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:37:41 [INFO] [61/11] Done in 279.4s | correct=None | steps=173 | accepted=61 | rejected=112 | tokens=4975 | stop=finished
+2026-03-15 04:37:41 [DEBUG]   Saved /home/ruthvik/specreason/results/61/11.pickle
+2026-03-15 04:37:41 [INFO] [Problem 61] mathverify=0.0 (0/12) | llm=0.0 (0/12) | avg_tokens=5877.1667 | avg_time=308.8808s
+2026-03-15 04:37:41 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.5 llm=0.0 (14/28 runs correct)
+2026-03-15 04:37:41 [INFO] [61/12] Starting run ...
+2026-03-15 04:37:41 [DEBUG] [61/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:42:24 [INFO] [61/12] Done in 282.96s | correct=None | steps=140 | accepted=67 | rejected=73 | tokens=5783 | stop=finished
+2026-03-15 04:42:24 [DEBUG]   Saved /home/ruthvik/specreason/results/61/12.pickle
+2026-03-15 04:42:24 [INFO] [Problem 61] mathverify=0.0 (0/13) | llm=0.0 (0/13) | avg_tokens=5869.9231 | avg_time=306.4862s
+2026-03-15 04:42:24 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.4828 llm=0.0 (14/29 runs correct)
+2026-03-15 04:42:24 [INFO] [61/13] Starting run ...
+2026-03-15 04:42:24 [DEBUG] [61/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:47:52 [INFO] [61/13] Done in 328.15s | correct=None | steps=202 | accepted=69 | rejected=133 | tokens=5879 | stop=finished
+2026-03-15 04:47:52 [DEBUG]   Saved /home/ruthvik/specreason/results/61/13.pickle
+2026-03-15 04:47:52 [INFO] [Problem 61] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=5870.5714 | avg_time=307.6667s
+2026-03-15 04:47:52 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.4667 llm=0.0 (14/30 runs correct)
+2026-03-15 04:47:52 [INFO] [61/14] Starting run ...
+2026-03-15 04:47:52 [DEBUG] [61/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:54:44 [INFO] [61/14] Done in 412.05s | correct=None | steps=223 | accepted=60 | rejected=163 | tokens=6825 | stop=finished
+2026-03-15 04:54:44 [DEBUG]   Saved /home/ruthvik/specreason/results/61/14.pickle
+2026-03-15 04:54:44 [INFO] [Problem 61] mathverify=0.0 (0/15) | llm=0.0 (0/15) | avg_tokens=5934.2 | avg_time=314.2585s
+2026-03-15 04:54:44 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.4516 llm=0.0 (14/31 runs correct)
+2026-03-15 04:54:44 [INFO] [61/15] Starting run ...
+2026-03-15 04:54:44 [DEBUG] [61/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 04:59:57 [INFO] [61/15] Done in 312.35s | correct=None | steps=179 | accepted=67 | rejected=112 | tokens=6134 | stop=finished
+2026-03-15 04:59:57 [DEBUG]   Saved /home/ruthvik/specreason/results/61/15.pickle
+2026-03-15 04:59:57 [INFO] [Problem 61] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5946.6875 | avg_time=313.7606s
+2026-03-15 04:59:57 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.4375 llm=0.0 (14/32 runs correct)
+2026-03-15 04:59:57 [INFO] Problem 61 finished in 5108.3s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 04:59:57 [INFO] [Problem 61] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5946.6875 | avg_time=313.7606s
+2026-03-15 04:59:57 [INFO] Experiment summary updated: 2/30 problems done | mathverify=0.4375 llm=0.0 (14/32 runs correct)
+2026-03-15 04:59:57 [INFO] 
+2026-03-15 04:59:57 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 04:59:57 [INFO] PROBLEM 62  (3/30)
+2026-03-15 04:59:57 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 04:59:57 [INFO] [62/0] Starting run ...
+2026-03-15 04:59:57 [DEBUG] [62/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:04:22 [INFO] [62/0] Done in 265.25s | correct=None | steps=91 | accepted=5 | rejected=86 | tokens=3992 | stop=finished
+2026-03-15 05:04:22 [DEBUG]   Saved /home/ruthvik/specreason/results/62/0.pickle
+2026-03-15 05:04:22 [INFO] [Problem 62] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=3992.0 | avg_time=259.98s
+2026-03-15 05:04:22 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.4242 llm=0.0 (14/33 runs correct)
+2026-03-15 05:04:22 [INFO] [62/1] Starting run ...
+2026-03-15 05:04:22 [DEBUG] [62/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:08:32 [INFO] [62/1] Done in 249.83s | correct=None | steps=65 | accepted=8 | rejected=57 | tokens=4029 | stop=finished
+2026-03-15 05:08:32 [DEBUG]   Saved /home/ruthvik/specreason/results/62/1.pickle
+2026-03-15 05:08:32 [INFO] [Problem 62] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=4010.5 | avg_time=252.208s
+2026-03-15 05:08:32 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.4118 llm=0.0 (14/34 runs correct)
+2026-03-15 05:08:32 [INFO] [62/2] Starting run ...
+2026-03-15 05:08:32 [DEBUG] [62/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:12:35 [INFO] [62/2] Done in 242.71s | correct=None | steps=41 | accepted=4 | rejected=37 | tokens=3968 | stop=finished
+2026-03-15 05:12:35 [DEBUG]   Saved /home/ruthvik/specreason/results/62/2.pickle
+2026-03-15 05:12:35 [INFO] [Problem 62] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=3996.3333 | avg_time=247.392s
+2026-03-15 05:12:35 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.4 llm=0.0 (14/35 runs correct)
+2026-03-15 05:12:35 [INFO] [62/3] Starting run ...
+2026-03-15 05:12:35 [DEBUG] [62/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:16:59 [INFO] [62/3] Done in 264.86s | correct=None | steps=82 | accepted=6 | rejected=76 | tokens=4020 | stop=finished
+2026-03-15 05:17:00 [DEBUG]   Saved /home/ruthvik/specreason/results/62/3.pickle
+2026-03-15 05:17:00 [INFO] [Problem 62] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=4002.25 | avg_time=250.5027s
+2026-03-15 05:17:00 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3889 llm=0.0 (14/36 runs correct)
+2026-03-15 05:17:00 [INFO] [62/4] Starting run ...
+2026-03-15 05:17:00 [DEBUG] [62/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:21:21 [INFO] [62/4] Done in 261.24s | correct=None | steps=101 | accepted=9 | rejected=92 | tokens=3931 | stop=finished
+2026-03-15 05:21:21 [DEBUG]   Saved /home/ruthvik/specreason/results/62/4.pickle
+2026-03-15 05:21:21 [INFO] [Problem 62] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=3988.0 | avg_time=251.6224s
+2026-03-15 05:21:21 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3784 llm=0.0 (14/37 runs correct)
+2026-03-15 05:21:21 [INFO] [62/5] Starting run ...
+2026-03-15 05:21:21 [DEBUG] [62/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:25:19 [INFO] [62/5] Done in 238.26s | correct=None | steps=100 | accepted=11 | rejected=89 | tokens=3794 | stop=finished
+2026-03-15 05:25:19 [DEBUG]   Saved /home/ruthvik/specreason/results/62/5.pickle
+2026-03-15 05:25:19 [INFO] [Problem 62] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=3955.6667 | avg_time=248.4915s
+2026-03-15 05:25:19 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3684 llm=0.0 (14/38 runs correct)
+2026-03-15 05:25:19 [INFO] [62/6] Starting run ...
+2026-03-15 05:25:19 [DEBUG] [62/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:29:26 [INFO] [62/6] Done in 246.65s | correct=None | steps=49 | accepted=4 | rejected=45 | tokens=3810 | stop=finished
+2026-03-15 05:29:26 [DEBUG]   Saved /home/ruthvik/specreason/results/62/6.pickle
+2026-03-15 05:29:26 [INFO] [Problem 62] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=3934.8571 | avg_time=247.4176s
+2026-03-15 05:29:26 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.359 llm=0.0 (14/39 runs correct)
+2026-03-15 05:29:26 [INFO] [62/7] Starting run ...
+2026-03-15 05:29:26 [DEBUG] [62/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:34:00 [INFO] [62/7] Done in 273.97s | correct=None | steps=118 | accepted=6 | rejected=112 | tokens=3908 | stop=finished
+2026-03-15 05:34:00 [DEBUG]   Saved /home/ruthvik/specreason/results/62/7.pickle
+2026-03-15 05:34:00 [INFO] [Problem 62] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=3931.5 | avg_time=250.0828s
+2026-03-15 05:34:00 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.35 llm=0.0 (14/40 runs correct)
+2026-03-15 05:34:00 [INFO] [62/8] Starting run ...
+2026-03-15 05:34:00 [DEBUG] [62/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:37:43 [INFO] [62/8] Done in 222.88s | correct=None | steps=44 | accepted=7 | rejected=37 | tokens=3710 | stop=finished
+2026-03-15 05:37:43 [DEBUG]   Saved /home/ruthvik/specreason/results/62/8.pickle
+2026-03-15 05:37:43 [INFO] [Problem 62] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=3906.8889 | avg_time=246.5021s
+2026-03-15 05:37:43 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3415 llm=0.0 (14/41 runs correct)
+2026-03-15 05:37:43 [INFO] [62/9] Starting run ...
+2026-03-15 05:37:43 [DEBUG] [62/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:42:07 [INFO] [62/9] Done in 264.47s | correct=None | steps=79 | accepted=5 | rejected=74 | tokens=3926 | stop=finished
+2026-03-15 05:42:07 [DEBUG]   Saved /home/ruthvik/specreason/results/62/9.pickle
+2026-03-15 05:42:07 [INFO] [Problem 62] mathverify=0.0 (0/10) | llm=0.0 (0/10) | avg_tokens=3908.8 | avg_time=247.7921s
+2026-03-15 05:42:07 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3333 llm=0.0 (14/42 runs correct)
+2026-03-15 05:42:07 [INFO] [62/10] Starting run ...
+2026-03-15 05:42:07 [DEBUG] [62/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:45:42 [INFO] [62/10] Done in 214.43s | correct=None | steps=66 | accepted=19 | rejected=47 | tokens=4167 | stop=finished
+2026-03-15 05:45:42 [DEBUG]   Saved /home/ruthvik/specreason/results/62/10.pickle
+2026-03-15 05:45:42 [INFO] [Problem 62] mathverify=0.0 (0/11) | llm=0.0 (0/11) | avg_tokens=3932.2727 | avg_time=244.2933s
+2026-03-15 05:45:42 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3256 llm=0.0 (14/43 runs correct)
+2026-03-15 05:45:42 [INFO] [62/11] Starting run ...
+2026-03-15 05:45:42 [DEBUG] [62/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:49:31 [INFO] [62/11] Done in 229.27s | correct=None | steps=40 | accepted=2 | rejected=38 | tokens=3577 | stop=finished
+2026-03-15 05:49:31 [DEBUG]   Saved /home/ruthvik/specreason/results/62/11.pickle
+2026-03-15 05:49:31 [INFO] [Problem 62] mathverify=0.0 (0/12) | llm=0.0 (0/12) | avg_tokens=3902.6667 | avg_time=242.6369s
+2026-03-15 05:49:31 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3182 llm=0.0 (14/44 runs correct)
+2026-03-15 05:49:31 [INFO] [62/12] Starting run ...
+2026-03-15 05:49:31 [DEBUG] [62/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:53:40 [INFO] [62/12] Done in 249.05s | correct=None | steps=59 | accepted=2 | rejected=57 | tokens=3735 | stop=finished
+2026-03-15 05:53:40 [DEBUG]   Saved /home/ruthvik/specreason/results/62/12.pickle
+2026-03-15 05:53:40 [INFO] [Problem 62] mathverify=0.0 (0/13) | llm=0.0 (0/13) | avg_tokens=3889.7692 | avg_time=242.748s
+2026-03-15 05:53:40 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3111 llm=0.0 (14/45 runs correct)
+2026-03-15 05:53:40 [INFO] [62/13] Starting run ...
+2026-03-15 05:53:40 [DEBUG] [62/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 05:57:50 [INFO] [62/13] Done in 249.8s | correct=None | steps=66 | accepted=5 | rejected=61 | tokens=3828 | stop=finished
+2026-03-15 05:57:50 [DEBUG]   Saved /home/ruthvik/specreason/results/62/13.pickle
+2026-03-15 05:57:50 [INFO] [Problem 62] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=3885.3571 | avg_time=242.8979s
+2026-03-15 05:57:50 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.3043 llm=0.0 (14/46 runs correct)
+2026-03-15 05:57:50 [INFO] [62/14] Starting run ...
+2026-03-15 05:57:50 [DEBUG] [62/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:02:02 [INFO] [62/14] Done in 252.42s | correct=None | steps=61 | accepted=2 | rejected=59 | tokens=3740 | stop=finished
+2026-03-15 06:02:03 [DEBUG]   Saved /home/ruthvik/specreason/results/62/14.pickle
+2026-03-15 06:02:03 [INFO] [Problem 62] mathverify=0.0 (0/15) | llm=0.0 (0/15) | avg_tokens=3875.6667 | avg_time=243.2001s
+2026-03-15 06:02:03 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.2979 llm=0.0 (14/47 runs correct)
+2026-03-15 06:02:03 [INFO] [62/15] Starting run ...
+2026-03-15 06:02:03 [DEBUG] [62/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 62 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:05:53 [INFO] [62/15] Done in 230.11s | correct=None | steps=52 | accepted=6 | rejected=46 | tokens=3674 | stop=finished
+2026-03-15 06:05:53 [DEBUG]   Saved /home/ruthvik/specreason/results/62/15.pickle
+2026-03-15 06:05:53 [INFO] [Problem 62] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=3863.0625 | avg_time=242.0766s
+2026-03-15 06:05:53 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.2917 llm=0.0 (14/48 runs correct)
+2026-03-15 06:05:53 [INFO] Problem 62 finished in 3956.1s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 06:05:53 [INFO] [Problem 62] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=3863.0625 | avg_time=242.0766s
+2026-03-15 06:05:53 [INFO] Experiment summary updated: 3/30 problems done | mathverify=0.2917 llm=0.0 (14/48 runs correct)
+2026-03-15 06:05:53 [INFO] 
+2026-03-15 06:05:53 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 06:05:53 [INFO] PROBLEM 63  (4/30)
+2026-03-15 06:05:53 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 06:05:53 [INFO] [63/0] Starting run ...
+2026-03-15 06:05:53 [DEBUG] [63/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:11:18 [INFO] [63/0] Done in 325.45s | correct=None | steps=90 | accepted=11 | rejected=79 | tokens=5253 | stop=finished
+2026-03-15 06:11:18 [DEBUG]   Saved /home/ruthvik/specreason/results/63/0.pickle
+2026-03-15 06:11:18 [INFO] [Problem 63] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5253.0 | avg_time=320.379s
+2026-03-15 06:11:18 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2857 llm=0.0 (14/49 runs correct)
+2026-03-15 06:11:18 [INFO] [63/1] Starting run ...
+2026-03-15 06:11:18 [DEBUG] [63/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:16:39 [INFO] [63/1] Done in 320.41s | correct=None | steps=75 | accepted=8 | rejected=67 | tokens=5095 | stop=finished
+2026-03-15 06:16:39 [DEBUG]   Saved /home/ruthvik/specreason/results/63/1.pickle
+2026-03-15 06:16:39 [INFO] [Problem 63] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=5174.0 | avg_time=317.8725s
+2026-03-15 06:16:39 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.28 llm=0.0 (14/50 runs correct)
+2026-03-15 06:16:39 [INFO] [63/2] Starting run ...
+2026-03-15 06:16:39 [DEBUG] [63/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:22:32 [INFO] [63/2] Done in 353.22s | correct=None | steps=114 | accepted=11 | rejected=103 | tokens=5276 | stop=finished
+2026-03-15 06:22:32 [DEBUG]   Saved /home/ruthvik/specreason/results/63/2.pickle
+2026-03-15 06:22:32 [INFO] [Problem 63] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=5208.0 | avg_time=327.9657s
+2026-03-15 06:22:32 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2745 llm=0.0 (14/51 runs correct)
+2026-03-15 06:22:32 [INFO] [63/3] Starting run ...
+2026-03-15 06:22:32 [DEBUG] [63/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:27:40 [INFO] [63/3] Done in 308.3s | correct=None | steps=180 | accepted=103 | rejected=77 | tokens=6785 | stop=finished
+2026-03-15 06:27:40 [DEBUG]   Saved /home/ruthvik/specreason/results/63/3.pickle
+2026-03-15 06:27:40 [INFO] [Problem 63] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=5602.25 | avg_time=321.794s
+2026-03-15 06:27:40 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2692 llm=0.0 (14/52 runs correct)
+2026-03-15 06:27:40 [INFO] [63/4] Starting run ...
+2026-03-15 06:27:40 [DEBUG] [63/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:33:10 [INFO] [63/4] Done in 329.38s | correct=None | steps=104 | accepted=25 | rejected=79 | tokens=5463 | stop=finished
+2026-03-15 06:33:10 [DEBUG]   Saved /home/ruthvik/specreason/results/63/4.pickle
+2026-03-15 06:33:10 [INFO] [Problem 63] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=5574.4 | avg_time=322.2958s
+2026-03-15 06:33:10 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2642 llm=0.0 (14/53 runs correct)
+2026-03-15 06:33:10 [INFO] [63/5] Starting run ...
+2026-03-15 06:33:10 [DEBUG] [63/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:38:04 [INFO] [63/5] Done in 294.58s | correct=None | steps=54 | accepted=11 | rejected=43 | tokens=5081 | stop=finished
+2026-03-15 06:38:04 [DEBUG]   Saved /home/ruthvik/specreason/results/63/5.pickle
+2026-03-15 06:38:04 [INFO] [Problem 63] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=5492.1667 | avg_time=316.8248s
+2026-03-15 06:38:04 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2593 llm=0.0 (14/54 runs correct)
+2026-03-15 06:38:04 [INFO] [63/6] Starting run ...
+2026-03-15 06:38:04 [DEBUG] [63/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:43:23 [INFO] [63/6] Done in 318.53s | correct=None | steps=147 | accepted=45 | rejected=102 | tokens=5594 | stop=finished
+2026-03-15 06:43:23 [DEBUG]   Saved /home/ruthvik/specreason/results/63/6.pickle
+2026-03-15 06:43:23 [INFO] [Problem 63] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=5506.7143 | avg_time=316.3194s
+2026-03-15 06:43:23 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2545 llm=0.0 (14/55 runs correct)
+2026-03-15 06:43:23 [INFO] [63/7] Starting run ...
+2026-03-15 06:43:23 [DEBUG] [63/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:49:48 [INFO] [63/7] Done in 385.09s | correct=None | steps=113 | accepted=5 | rejected=108 | tokens=5636 | stop=finished
+2026-03-15 06:49:48 [DEBUG]   Saved /home/ruthvik/specreason/results/63/7.pickle
+2026-03-15 06:49:48 [INFO] [Problem 63] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=5522.875 | avg_time=324.2839s
+2026-03-15 06:49:48 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.25 llm=0.0 (14/56 runs correct)
+2026-03-15 06:49:48 [INFO] [63/8] Starting run ...
+2026-03-15 06:49:48 [DEBUG] [63/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 06:55:21 [INFO] [63/8] Done in 333.17s | correct=None | steps=159 | accepted=52 | rejected=107 | tokens=6005 | stop=finished
+2026-03-15 06:55:22 [DEBUG]   Saved /home/ruthvik/specreason/results/63/8.pickle
+2026-03-15 06:55:22 [INFO] [Problem 63] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=5576.4444 | avg_time=324.6831s
+2026-03-15 06:55:22 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2456 llm=0.0 (14/57 runs correct)
+2026-03-15 06:55:22 [INFO] [63/9] Starting run ...
+2026-03-15 06:55:22 [DEBUG] [63/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:00:17 [INFO] [63/9] Done in 295.67s | correct=None | steps=103 | accepted=26 | rejected=77 | tokens=5076 | stop=finished
+2026-03-15 07:00:17 [DEBUG]   Saved /home/ruthvik/specreason/results/63/9.pickle
+2026-03-15 07:00:17 [INFO] [Problem 63] mathverify=0.0 (0/10) | llm=0.0 (0/10) | avg_tokens=5526.4 | avg_time=321.2674s
+2026-03-15 07:00:17 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2414 llm=0.0 (14/58 runs correct)
+2026-03-15 07:00:17 [INFO] [63/10] Starting run ...
+2026-03-15 07:00:17 [DEBUG] [63/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:05:46 [INFO] [63/10] Done in 328.49s | correct=None | steps=129 | accepted=33 | rejected=96 | tokens=5623 | stop=finished
+2026-03-15 07:05:46 [DEBUG]   Saved /home/ruthvik/specreason/results/63/10.pickle
+2026-03-15 07:05:46 [INFO] [Problem 63] mathverify=0.0 (0/11) | llm=0.0 (0/11) | avg_tokens=5535.1818 | avg_time=321.4734s
+2026-03-15 07:05:46 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2373 llm=0.0 (14/59 runs correct)
+2026-03-15 07:05:46 [INFO] [63/11] Starting run ...
+2026-03-15 07:05:46 [DEBUG] [63/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:11:18 [INFO] [63/11] Done in 332.11s | correct=None | steps=87 | accepted=5 | rejected=82 | tokens=5090 | stop=finished
+2026-03-15 07:11:18 [DEBUG]   Saved /home/ruthvik/specreason/results/63/11.pickle
+2026-03-15 07:11:18 [INFO] [Problem 63] mathverify=0.0 (0/12) | llm=0.0 (0/12) | avg_tokens=5498.0833 | avg_time=321.9227s
+2026-03-15 07:11:18 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2333 llm=0.0 (14/60 runs correct)
+2026-03-15 07:11:18 [INFO] [63/12] Starting run ...
+2026-03-15 07:11:18 [DEBUG] [63/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:16:41 [INFO] [63/12] Done in 323.28s | correct=None | steps=62 | accepted=9 | rejected=53 | tokens=5229 | stop=finished
+2026-03-15 07:16:41 [DEBUG]   Saved /home/ruthvik/specreason/results/63/12.pickle
+2026-03-15 07:16:41 [INFO] [Problem 63] mathverify=0.0 (0/13) | llm=0.0 (0/13) | avg_tokens=5477.3846 | avg_time=321.6438s
+2026-03-15 07:16:41 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2295 llm=0.0 (14/61 runs correct)
+2026-03-15 07:16:41 [INFO] [63/13] Starting run ...
+2026-03-15 07:16:41 [DEBUG] [63/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:23:07 [INFO] [63/13] Done in 385.74s | correct=None | steps=149 | accepted=37 | rejected=112 | tokens=6503 | stop=finished
+2026-03-15 07:23:07 [DEBUG]   Saved /home/ruthvik/specreason/results/63/13.pickle
+2026-03-15 07:23:07 [INFO] [Problem 63] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=5550.6429 | avg_time=325.8479s
+2026-03-15 07:23:07 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2258 llm=0.0 (14/62 runs correct)
+2026-03-15 07:23:07 [INFO] [63/14] Starting run ...
+2026-03-15 07:23:07 [DEBUG] [63/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:28:05 [INFO] [63/14] Done in 297.83s | correct=None | steps=117 | accepted=34 | rejected=83 | tokens=5278 | stop=finished
+2026-03-15 07:28:05 [DEBUG]   Saved /home/ruthvik/specreason/results/63/14.pickle
+2026-03-15 07:28:05 [INFO] [Problem 63] mathverify=0.0 (0/15) | llm=0.0 (0/15) | avg_tokens=5532.4667 | avg_time=323.5999s
+2026-03-15 07:28:05 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2222 llm=0.0 (14/63 runs correct)
+2026-03-15 07:28:05 [INFO] [63/15] Starting run ...
+2026-03-15 07:28:05 [DEBUG] [63/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 63 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:34:05 [INFO] [63/15] Done in 359.4s | correct=None | steps=141 | accepted=36 | rejected=105 | tokens=6225 | stop=finished
+2026-03-15 07:34:05 [DEBUG]   Saved /home/ruthvik/specreason/results/63/15.pickle
+2026-03-15 07:34:05 [INFO] [Problem 63] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5575.75 | avg_time=325.4866s
+2026-03-15 07:34:05 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2188 llm=0.0 (14/64 runs correct)
+2026-03-15 07:34:05 [INFO] Problem 63 finished in 5291.9s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 07:34:05 [INFO] [Problem 63] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5575.75 | avg_time=325.4866s
+2026-03-15 07:34:05 [INFO] Experiment summary updated: 4/30 problems done | mathverify=0.2188 llm=0.0 (14/64 runs correct)
+2026-03-15 07:34:05 [INFO] 
+2026-03-15 07:34:05 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 07:34:05 [INFO] PROBLEM 64  (5/30)
+2026-03-15 07:34:05 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 07:34:05 [INFO] [64/0] Starting run ...
+2026-03-15 07:34:05 [DEBUG] [64/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:37:38 [INFO] [64/0] Done in 213.85s | correct=False | steps=139 | accepted=79 | rejected=60 | tokens=5758 | stop=finished
+2026-03-15 07:37:39 [DEBUG]   Saved /home/ruthvik/specreason/results/64/0.pickle
+2026-03-15 07:37:39 [INFO] [Problem 64] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5758.0 | avg_time=208.654s
+2026-03-15 07:37:39 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2154 llm=0.0 (14/65 runs correct)
+2026-03-15 07:37:39 [INFO] [64/1] Starting run ...
+2026-03-15 07:37:39 [DEBUG] [64/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:39:48 [INFO] [64/1] Done in 129.72s | correct=False | steps=98 | accepted=78 | rejected=20 | tokens=4440 | stop=finished
+2026-03-15 07:39:48 [DEBUG]   Saved /home/ruthvik/specreason/results/64/1.pickle
+2026-03-15 07:39:48 [INFO] [Problem 64] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=5099.0 | avg_time=166.2745s
+2026-03-15 07:39:48 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2121 llm=0.0 (14/66 runs correct)
+2026-03-15 07:39:48 [INFO] [64/2] Starting run ...
+2026-03-15 07:39:48 [DEBUG] [64/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:43:03 [INFO] [64/2] Done in 194.97s | correct=None | steps=105 | accepted=68 | rejected=37 | tokens=6919 | stop=finished
+2026-03-15 07:43:03 [DEBUG]   Saved /home/ruthvik/specreason/results/64/2.pickle
+2026-03-15 07:43:03 [INFO] [Problem 64] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=5705.6667 | avg_time=174.0573s
+2026-03-15 07:43:03 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.209 llm=0.0 (14/67 runs correct)
+2026-03-15 07:43:03 [INFO] [64/3] Starting run ...
+2026-03-15 07:43:03 [DEBUG] [64/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:47:45 [INFO] [64/3] Done in 281.58s | correct=None | steps=147 | accepted=99 | rejected=48 | tokens=7447 | stop=finished
+2026-03-15 07:47:45 [DEBUG]   Saved /home/ruthvik/specreason/results/64/3.pickle
+2026-03-15 07:47:45 [INFO] [Problem 64] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=6141.0 | avg_time=199.6335s
+2026-03-15 07:47:45 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2059 llm=0.0 (14/68 runs correct)
+2026-03-15 07:47:45 [INFO] [64/4] Starting run ...
+2026-03-15 07:47:45 [DEBUG] [64/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:51:09 [ERROR] [64/4] FAILED (rc=1) in 203.75s — see /home/ruthvik/specreason/results/64/4.log
+2026-03-15 07:51:09 [INFO] [Problem 64] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=6141.0 | avg_time=199.6335s
+2026-03-15 07:51:09 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2059 llm=0.0 (14/68 runs correct)
+2026-03-15 07:51:09 [INFO] [64/5] Starting run ...
+2026-03-15 07:51:09 [DEBUG] [64/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:54:42 [INFO] [64/5] Done in 212.93s | correct=False | steps=164 | accepted=112 | rejected=52 | tokens=5942 | stop=finished
+2026-03-15 07:54:42 [DEBUG]   Saved /home/ruthvik/specreason/results/64/5.pickle
+2026-03-15 07:54:42 [INFO] [Problem 64] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=6101.2 | avg_time=201.2178s
+2026-03-15 07:54:42 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2029 llm=0.0 (14/69 runs correct)
+2026-03-15 07:54:42 [INFO] [64/6] Starting run ...
+2026-03-15 07:54:42 [DEBUG] [64/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 07:58:39 [INFO] [64/6] Done in 236.78s | correct=None | steps=219 | accepted=138 | rejected=81 | tokens=7315 | stop=finished
+2026-03-15 07:58:39 [DEBUG]   Saved /home/ruthvik/specreason/results/64/6.pickle
+2026-03-15 07:58:39 [INFO] [Problem 64] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=6303.5 | avg_time=206.2433s
+2026-03-15 07:58:39 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.2 llm=0.0 (14/70 runs correct)
+2026-03-15 07:58:39 [INFO] [64/7] Starting run ...
+2026-03-15 07:58:39 [DEBUG] [64/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:03:29 [INFO] [64/7] Done in 290.64s | correct=None | steps=187 | accepted=113 | rejected=74 | tokens=7528 | stop=finished
+2026-03-15 08:03:29 [DEBUG]   Saved /home/ruthvik/specreason/results/64/7.pickle
+2026-03-15 08:03:29 [INFO] [Problem 64] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=6478.4286 | avg_time=217.5243s
+2026-03-15 08:03:29 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1972 llm=0.0 (14/71 runs correct)
+2026-03-15 08:03:29 [INFO] [64/8] Starting run ...
+2026-03-15 08:03:29 [DEBUG] [64/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:09:10 [INFO] [64/8] Done in 340.71s | correct=None | steps=181 | accepted=84 | rejected=97 | tokens=7486 | stop=finished
+2026-03-15 08:09:10 [DEBUG]   Saved /home/ruthvik/specreason/results/64/8.pickle
+2026-03-15 08:09:10 [INFO] [Problem 64] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=6604.375 | avg_time=232.2523s
+2026-03-15 08:09:10 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1944 llm=0.0 (14/72 runs correct)
+2026-03-15 08:09:10 [INFO] [64/9] Starting run ...
+2026-03-15 08:09:10 [DEBUG] [64/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:13:46 [INFO] [64/9] Done in 275.75s | correct=None | steps=126 | accepted=65 | rejected=61 | tokens=6744 | stop=finished
+2026-03-15 08:13:46 [DEBUG]   Saved /home/ruthvik/specreason/results/64/9.pickle
+2026-03-15 08:13:46 [INFO] [Problem 64] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=6619.8889 | avg_time=236.4918s
+2026-03-15 08:13:46 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1918 llm=0.0 (14/73 runs correct)
+2026-03-15 08:13:46 [INFO] [64/10] Starting run ...
+2026-03-15 08:13:46 [DEBUG] [64/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:18:58 [INFO] [64/10] Done in 311.85s | correct=None | steps=163 | accepted=84 | rejected=79 | tokens=7296 | stop=finished
+2026-03-15 08:18:58 [DEBUG]   Saved /home/ruthvik/specreason/results/64/10.pickle
+2026-03-15 08:18:58 [INFO] [Problem 64] mathverify=0.0 (0/10) | llm=0.0 (0/10) | avg_tokens=6687.5 | avg_time=243.4896s
+2026-03-15 08:18:58 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1892 llm=0.0 (14/74 runs correct)
+2026-03-15 08:18:58 [INFO] [64/11] Starting run ...
+2026-03-15 08:18:58 [DEBUG] [64/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:22:45 [INFO] [64/11] Done in 227.4s | correct=None | steps=95 | accepted=66 | rejected=29 | tokens=6864 | stop=finished
+2026-03-15 08:22:45 [DEBUG]   Saved /home/ruthvik/specreason/results/64/11.pickle
+2026-03-15 08:22:45 [INFO] [Problem 64] mathverify=0.0 (0/11) | llm=0.0 (0/11) | avg_tokens=6703.5455 | avg_time=241.5499s
+2026-03-15 08:22:45 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1867 llm=0.0 (14/75 runs correct)
+2026-03-15 08:22:45 [INFO] [64/12] Starting run ...
+2026-03-15 08:22:45 [DEBUG] [64/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:28:42 [INFO] [64/12] Done in 357.04s | correct=None | steps=150 | accepted=68 | rejected=82 | tokens=7586 | stop=finished
+2026-03-15 08:28:43 [DEBUG]   Saved /home/ruthvik/specreason/results/64/12.pickle
+2026-03-15 08:28:43 [INFO] [Problem 64] mathverify=0.0 (0/12) | llm=0.0 (0/12) | avg_tokens=6777.0833 | avg_time=250.7547s
+2026-03-15 08:28:43 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1842 llm=0.0 (14/76 runs correct)
+2026-03-15 08:28:43 [INFO] [64/13] Starting run ...
+2026-03-15 08:28:43 [DEBUG] [64/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:34:29 [INFO] [64/13] Done in 346.64s | correct=False | steps=150 | accepted=77 | rejected=73 | tokens=7198 | stop=finished
+2026-03-15 08:34:29 [DEBUG]   Saved /home/ruthvik/specreason/results/64/13.pickle
+2026-03-15 08:34:29 [INFO] [Problem 64] mathverify=0.0 (0/13) | llm=0.0 (0/13) | avg_tokens=6809.4615 | avg_time=257.7052s
+2026-03-15 08:34:29 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1818 llm=0.0 (14/77 runs correct)
+2026-03-15 08:34:29 [INFO] [64/14] Starting run ...
+2026-03-15 08:34:29 [DEBUG] [64/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:36:56 [INFO] [64/14] Done in 146.5s | correct=False | steps=142 | accepted=121 | rejected=21 | tokens=7106 | stop=finished
+2026-03-15 08:36:56 [DEBUG]   Saved /home/ruthvik/specreason/results/64/14.pickle
+2026-03-15 08:36:56 [INFO] [Problem 64] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=6830.6429 | avg_time=249.3919s
+2026-03-15 08:36:56 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1795 llm=0.0 (14/78 runs correct)
+2026-03-15 08:36:56 [INFO] [64/15] Starting run ...
+2026-03-15 08:36:56 [DEBUG] [64/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 64 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:42:36 [ERROR] [64/15] FAILED (rc=1) in 339.71s — see /home/ruthvik/specreason/results/64/15.log
+2026-03-15 08:42:36 [INFO] [Problem 64] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=6830.6429 | avg_time=249.3919s
+2026-03-15 08:42:36 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1795 llm=0.0 (14/78 runs correct)
+2026-03-15 08:42:36 [INFO] Problem 64 finished in 4111.0s: 14/16 runs succeeded, 2 failed/timed out
+2026-03-15 08:42:36 [INFO] [Problem 64] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=6830.6429 | avg_time=249.3919s
+2026-03-15 08:42:36 [INFO] Experiment summary updated: 5/30 problems done | mathverify=0.1795 llm=0.0 (14/78 runs correct)
+2026-03-15 08:42:36 [INFO] 
+2026-03-15 08:42:36 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 08:42:36 [INFO] PROBLEM 65  (6/30)
+2026-03-15 08:42:36 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 08:42:36 [INFO] [65/0] Starting run ...
+2026-03-15 08:42:36 [DEBUG] [65/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:48:22 [INFO] [65/0] Done in 346.31s | correct=None | steps=169 | accepted=26 | rejected=143 | tokens=5484 | stop=finished
+2026-03-15 08:48:22 [DEBUG]   Saved /home/ruthvik/specreason/results/65/0.pickle
+2026-03-15 08:48:22 [INFO] [Problem 65] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5484.0 | avg_time=340.997s
+2026-03-15 08:48:22 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1772 llm=0.0 (14/79 runs correct)
+2026-03-15 08:48:22 [INFO] [65/1] Starting run ...
+2026-03-15 08:48:22 [DEBUG] [65/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:52:34 [INFO] [65/1] Done in 252.28s | correct=False | steps=234 | accepted=129 | rejected=105 | tokens=5807 | stop=finished
+2026-03-15 08:52:34 [DEBUG]   Saved /home/ruthvik/specreason/results/65/1.pickle
+2026-03-15 08:52:34 [INFO] [Problem 65] mathverify=0.5 (1/2) | llm=0.0 (0/2) | avg_tokens=5645.5 | avg_time=293.949s
+2026-03-15 08:52:34 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1875 llm=0.0 (15/80 runs correct)
+2026-03-15 08:52:34 [INFO] [65/2] Starting run ...
+2026-03-15 08:52:34 [DEBUG] [65/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 08:57:44 [INFO] [65/2] Done in 309.41s | correct=None | steps=198 | accepted=57 | rejected=141 | tokens=5686 | stop=finished
+2026-03-15 08:57:44 [DEBUG]   Saved /home/ruthvik/specreason/results/65/2.pickle
+2026-03-15 08:57:44 [INFO] [Problem 65] mathverify=0.3333 (1/3) | llm=0.0 (0/3) | avg_tokens=5659.0 | avg_time=297.3597s
+2026-03-15 08:57:44 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1852 llm=0.0 (15/81 runs correct)
+2026-03-15 08:57:44 [INFO] [65/3] Starting run ...
+2026-03-15 08:57:44 [DEBUG] [65/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:03:36 [INFO] [65/3] Done in 352.11s | correct=None | steps=286 | accepted=87 | rejected=199 | tokens=5777 | stop=finished
+2026-03-15 09:03:36 [DEBUG]   Saved /home/ruthvik/specreason/results/65/3.pickle
+2026-03-15 09:03:36 [INFO] [Problem 65] mathverify=0.25 (1/4) | llm=0.0 (0/4) | avg_tokens=5688.5 | avg_time=309.7155s
+2026-03-15 09:03:36 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1829 llm=0.0 (15/82 runs correct)
+2026-03-15 09:03:36 [INFO] [65/4] Starting run ...
+2026-03-15 09:03:36 [DEBUG] [65/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:07:10 [INFO] [65/4] Done in 213.62s | correct=None | steps=259 | accepted=171 | rejected=88 | tokens=6243 | stop=finished
+2026-03-15 09:07:10 [DEBUG]   Saved /home/ruthvik/specreason/results/65/4.pickle
+2026-03-15 09:07:10 [INFO] [Problem 65] mathverify=0.2 (1/5) | llm=0.0 (0/5) | avg_tokens=5799.4 | avg_time=288.9686s
+2026-03-15 09:07:10 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1807 llm=0.0 (15/83 runs correct)
+2026-03-15 09:07:10 [INFO] [65/5] Starting run ...
+2026-03-15 09:07:10 [DEBUG] [65/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:10:46 [INFO] [65/5] Done in 215.92s | correct=None | steps=169 | accepted=100 | rejected=69 | tokens=6200 | stop=finished
+2026-03-15 09:10:46 [DEBUG]   Saved /home/ruthvik/specreason/results/65/5.pickle
+2026-03-15 09:10:46 [INFO] [Problem 65] mathverify=0.1667 (1/6) | llm=0.0 (0/6) | avg_tokens=5866.1667 | avg_time=275.9253s
+2026-03-15 09:10:46 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1786 llm=0.0 (15/84 runs correct)
+2026-03-15 09:10:46 [INFO] [65/6] Starting run ...
+2026-03-15 09:10:46 [DEBUG] [65/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:14:38 [INFO] [65/6] Done in 231.96s | correct=False | steps=232 | accepted=135 | rejected=97 | tokens=5751 | stop=finished
+2026-03-15 09:14:38 [DEBUG]   Saved /home/ruthvik/specreason/results/65/6.pickle
+2026-03-15 09:14:38 [INFO] [Problem 65] mathverify=0.2857 (2/7) | llm=0.0 (0/7) | avg_tokens=5849.7143 | avg_time=268.8929s
+2026-03-15 09:14:38 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1882 llm=0.0 (16/85 runs correct)
+2026-03-15 09:14:38 [INFO] [65/7] Starting run ...
+2026-03-15 09:14:38 [DEBUG] [65/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:19:41 [INFO] [65/7] Done in 302.86s | correct=None | steps=252 | accepted=102 | rejected=150 | tokens=5756 | stop=finished
+2026-03-15 09:19:41 [DEBUG]   Saved /home/ruthvik/specreason/results/65/7.pickle
+2026-03-15 09:19:41 [INFO] [Problem 65] mathverify=0.25 (2/8) | llm=0.0 (0/8) | avg_tokens=5838.0 | avg_time=272.482s
+2026-03-15 09:19:41 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.186 llm=0.0 (16/86 runs correct)
+2026-03-15 09:19:41 [INFO] [65/8] Starting run ...
+2026-03-15 09:19:41 [DEBUG] [65/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:26:28 [INFO] [65/8] Done in 407.23s | correct=None | steps=250 | accepted=33 | rejected=217 | tokens=5921 | stop=finished
+2026-03-15 09:26:28 [DEBUG]   Saved /home/ruthvik/specreason/results/65/8.pickle
+2026-03-15 09:26:28 [INFO] [Problem 65] mathverify=0.2222 (2/9) | llm=0.0 (0/9) | avg_tokens=5847.2222 | avg_time=286.8606s
+2026-03-15 09:26:28 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1839 llm=0.0 (16/87 runs correct)
+2026-03-15 09:26:28 [INFO] [65/9] Starting run ...
+2026-03-15 09:26:28 [DEBUG] [65/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:30:52 [INFO] [65/9] Done in 263.42s | correct=False | steps=234 | accepted=113 | rejected=121 | tokens=5782 | stop=finished
+2026-03-15 09:30:52 [DEBUG]   Saved /home/ruthvik/specreason/results/65/9.pickle
+2026-03-15 09:30:52 [INFO] [Problem 65] mathverify=0.3 (3/10) | llm=0.0 (0/10) | avg_tokens=5840.7 | avg_time=283.9977s
+2026-03-15 09:30:52 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1932 llm=0.0 (17/88 runs correct)
+2026-03-15 09:30:52 [INFO] [65/10] Starting run ...
+2026-03-15 09:30:52 [DEBUG] [65/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:35:15 [INFO] [65/10] Done in 263.13s | correct=None | steps=202 | accepted=92 | rejected=110 | tokens=5210 | stop=finished
+2026-03-15 09:35:15 [DEBUG]   Saved /home/ruthvik/specreason/results/65/10.pickle
+2026-03-15 09:35:15 [INFO] [Problem 65] mathverify=0.2727 (3/11) | llm=0.0 (0/11) | avg_tokens=5783.3636 | avg_time=281.6133s
+2026-03-15 09:35:15 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.191 llm=0.0 (17/89 runs correct)
+2026-03-15 09:35:15 [INFO] [65/11] Starting run ...
+2026-03-15 09:35:15 [DEBUG] [65/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:40:41 [INFO] [65/11] Done in 326.13s | correct=None | steps=217 | accepted=74 | rejected=143 | tokens=5773 | stop=finished
+2026-03-15 09:40:41 [DEBUG]   Saved /home/ruthvik/specreason/results/65/11.pickle
+2026-03-15 09:40:41 [INFO] [Problem 65] mathverify=0.25 (3/12) | llm=0.0 (0/12) | avg_tokens=5782.5 | avg_time=284.878s
+2026-03-15 09:40:41 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1889 llm=0.0 (17/90 runs correct)
+2026-03-15 09:40:41 [INFO] [65/12] Starting run ...
+2026-03-15 09:40:41 [DEBUG] [65/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:47:59 [INFO] [65/12] Done in 437.52s | correct=None | steps=258 | accepted=12 | rejected=246 | tokens=6406 | stop=finished
+2026-03-15 09:47:59 [DEBUG]   Saved /home/ruthvik/specreason/results/65/12.pickle
+2026-03-15 09:47:59 [INFO] [Problem 65] mathverify=0.2308 (3/13) | llm=0.0 (0/13) | avg_tokens=5830.4615 | avg_time=296.1934s
+2026-03-15 09:47:59 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1868 llm=0.0 (17/91 runs correct)
+2026-03-15 09:47:59 [INFO] [65/13] Starting run ...
+2026-03-15 09:47:59 [DEBUG] [65/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:51:53 [INFO] [65/13] Done in 234.05s | correct=None | steps=254 | accepted=164 | rejected=90 | tokens=5805 | stop=finished
+2026-03-15 09:51:53 [DEBUG]   Saved /home/ruthvik/specreason/results/65/13.pickle
+2026-03-15 09:51:53 [INFO] [Problem 65] mathverify=0.2143 (3/14) | llm=0.0 (0/14) | avg_tokens=5828.6429 | avg_time=291.3636s
+2026-03-15 09:51:53 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1848 llm=0.0 (17/92 runs correct)
+2026-03-15 09:51:53 [INFO] [65/14] Starting run ...
+2026-03-15 09:51:53 [DEBUG] [65/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 09:59:23 [INFO] [65/14] Done in 450.44s | correct=None | steps=196 | accepted=23 | rejected=173 | tokens=7490 | stop=finished
+2026-03-15 09:59:23 [DEBUG]   Saved /home/ruthvik/specreason/results/65/14.pickle
+2026-03-15 09:59:23 [INFO] [Problem 65] mathverify=0.2 (3/15) | llm=0.0 (0/15) | avg_tokens=5939.4 | avg_time=301.6052s
+2026-03-15 09:59:23 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1828 llm=0.0 (17/93 runs correct)
+2026-03-15 09:59:23 [INFO] [65/15] Starting run ...
+2026-03-15 09:59:23 [DEBUG] [65/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 65 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:07:05 [INFO] [65/15] Done in 461.79s | correct=None | steps=280 | accepted=21 | rejected=259 | tokens=6569 | stop=finished
+2026-03-15 10:07:05 [DEBUG]   Saved /home/ruthvik/specreason/results/65/15.pickle
+2026-03-15 10:07:05 [INFO] [Problem 65] mathverify=0.1875 (3/16) | llm=0.0 (0/16) | avg_tokens=5978.75 | avg_time=311.2794s
+2026-03-15 10:07:05 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1809 llm=0.0 (17/94 runs correct)
+2026-03-15 10:07:05 [INFO] Problem 65 finished in 5069.8s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 10:07:05 [INFO] [Problem 65] mathverify=0.1875 (3/16) | llm=0.0 (0/16) | avg_tokens=5978.75 | avg_time=311.2794s
+2026-03-15 10:07:05 [INFO] Experiment summary updated: 6/30 problems done | mathverify=0.1809 llm=0.0 (17/94 runs correct)
+2026-03-15 10:07:05 [INFO] 
+2026-03-15 10:07:05 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 10:07:05 [INFO] PROBLEM 66  (7/30)
+2026-03-15 10:07:05 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 10:07:05 [INFO] [66/0] Starting run ...
+2026-03-15 10:07:05 [DEBUG] [66/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:11:55 [INFO] [66/0] Done in 289.4s | correct=None | steps=191 | accepted=63 | rejected=128 | tokens=5245 | stop=finished
+2026-03-15 10:11:55 [DEBUG]   Saved /home/ruthvik/specreason/results/66/0.pickle
+2026-03-15 10:11:55 [INFO] [Problem 66] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5245.0 | avg_time=284.293s
+2026-03-15 10:11:55 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1789 llm=0.0 (17/95 runs correct)
+2026-03-15 10:11:55 [INFO] [66/1] Starting run ...
+2026-03-15 10:11:55 [DEBUG] [66/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:16:46 [INFO] [66/1] Done in 290.73s | correct=None | steps=136 | accepted=33 | rejected=103 | tokens=5276 | stop=finished
+2026-03-15 10:16:46 [DEBUG]   Saved /home/ruthvik/specreason/results/66/1.pickle
+2026-03-15 10:16:46 [INFO] [Problem 66] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=5260.5 | avg_time=285.0135s
+2026-03-15 10:16:46 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1771 llm=0.0 (17/96 runs correct)
+2026-03-15 10:16:46 [INFO] [66/2] Starting run ...
+2026-03-15 10:16:46 [DEBUG] [66/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:22:26 [INFO] [66/2] Done in 339.94s | correct=None | steps=222 | accepted=58 | rejected=164 | tokens=5572 | stop=finished
+2026-03-15 10:22:26 [DEBUG]   Saved /home/ruthvik/specreason/results/66/2.pickle
+2026-03-15 10:22:26 [INFO] [Problem 66] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=5364.3333 | avg_time=301.5597s
+2026-03-15 10:22:26 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1753 llm=0.0 (17/97 runs correct)
+2026-03-15 10:22:26 [INFO] [66/3] Starting run ...
+2026-03-15 10:22:26 [DEBUG] [66/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:27:34 [INFO] [66/3] Done in 308.34s | correct=None | steps=149 | accepted=41 | rejected=108 | tokens=5635 | stop=finished
+2026-03-15 10:27:34 [DEBUG]   Saved /home/ruthvik/specreason/results/66/3.pickle
+2026-03-15 10:27:34 [INFO] [Problem 66] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=5432.0 | avg_time=301.9875s
+2026-03-15 10:27:34 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1735 llm=0.0 (17/98 runs correct)
+2026-03-15 10:27:34 [INFO] [66/4] Starting run ...
+2026-03-15 10:27:34 [DEBUG] [66/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:33:22 [INFO] [66/4] Done in 347.99s | correct=None | steps=207 | accepted=36 | rejected=171 | tokens=5437 | stop=finished
+2026-03-15 10:33:22 [DEBUG]   Saved /home/ruthvik/specreason/results/66/4.pickle
+2026-03-15 10:33:22 [INFO] [Problem 66] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=5433.0 | avg_time=310.1528s
+2026-03-15 10:33:22 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1717 llm=0.0 (17/99 runs correct)
+2026-03-15 10:33:22 [INFO] [66/5] Starting run ...
+2026-03-15 10:33:22 [DEBUG] [66/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:39:08 [INFO] [66/5] Done in 345.27s | correct=None | steps=217 | accepted=37 | rejected=180 | tokens=5602 | stop=finished
+2026-03-15 10:39:08 [DEBUG]   Saved /home/ruthvik/specreason/results/66/5.pickle
+2026-03-15 10:39:08 [INFO] [Problem 66] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=5461.1667 | avg_time=315.1245s
+2026-03-15 10:39:08 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.17 llm=0.0 (17/100 runs correct)
+2026-03-15 10:39:08 [INFO] [66/6] Starting run ...
+2026-03-15 10:39:08 [DEBUG] [66/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:44:52 [INFO] [66/6] Done in 344.63s | correct=None | steps=210 | accepted=33 | rejected=177 | tokens=5601 | stop=finished
+2026-03-15 10:44:52 [DEBUG]   Saved /home/ruthvik/specreason/results/66/6.pickle
+2026-03-15 10:44:52 [INFO] [Problem 66] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=5481.1429 | avg_time=318.559s
+2026-03-15 10:44:52 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1683 llm=0.0 (17/101 runs correct)
+2026-03-15 10:44:52 [INFO] [66/7] Starting run ...
+2026-03-15 10:44:52 [DEBUG] [66/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:49:13 [INFO] [66/7] Done in 260.59s | correct=False | steps=163 | accepted=51 | rejected=112 | tokens=5012 | stop=finished
+2026-03-15 10:49:13 [DEBUG]   Saved /home/ruthvik/specreason/results/66/7.pickle
+2026-03-15 10:49:13 [INFO] [Problem 66] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=5422.5 | avg_time=310.4681s
+2026-03-15 10:49:13 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1667 llm=0.0 (17/102 runs correct)
+2026-03-15 10:49:13 [INFO] [66/8] Starting run ...
+2026-03-15 10:49:13 [DEBUG] [66/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:53:17 [INFO] [66/8] Done in 243.57s | correct=None | steps=119 | accepted=45 | rejected=74 | tokens=5460 | stop=finished
+2026-03-15 10:53:17 [DEBUG]   Saved /home/ruthvik/specreason/results/66/8.pickle
+2026-03-15 10:53:17 [INFO] [Problem 66] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=5426.6667 | avg_time=302.4612s
+2026-03-15 10:53:17 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.165 llm=0.0 (17/103 runs correct)
+2026-03-15 10:53:17 [INFO] [66/9] Starting run ...
+2026-03-15 10:53:17 [DEBUG] [66/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 10:57:55 [INFO] [66/9] Done in 278.0s | correct=None | steps=282 | accepted=114 | rejected=168 | tokens=5742 | stop=finished
+2026-03-15 10:57:55 [DEBUG]   Saved /home/ruthvik/specreason/results/66/9.pickle
+2026-03-15 10:57:55 [INFO] [Problem 66] mathverify=0.0 (0/10) | llm=0.0 (0/10) | avg_tokens=5458.2 | avg_time=299.4814s
+2026-03-15 10:57:55 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1635 llm=0.0 (17/104 runs correct)
+2026-03-15 10:57:55 [INFO] [66/10] Starting run ...
+2026-03-15 10:57:55 [DEBUG] [66/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:03:54 [INFO] [66/10] Done in 359.66s | correct=None | steps=194 | accepted=19 | rejected=175 | tokens=5281 | stop=finished
+2026-03-15 11:03:55 [DEBUG]   Saved /home/ruthvik/specreason/results/66/10.pickle
+2026-03-15 11:03:55 [INFO] [Problem 66] mathverify=0.0 (0/11) | llm=0.0 (0/11) | avg_tokens=5442.0909 | avg_time=304.4623s
+2026-03-15 11:03:55 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1619 llm=0.0 (17/105 runs correct)
+2026-03-15 11:03:55 [INFO] [66/11] Starting run ...
+2026-03-15 11:03:55 [DEBUG] [66/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:09:00 [INFO] [66/11] Done in 305.18s | correct=None | steps=184 | accepted=56 | rejected=128 | tokens=5465 | stop=finished
+2026-03-15 11:09:00 [DEBUG]   Saved /home/ruthvik/specreason/results/66/11.pickle
+2026-03-15 11:09:00 [INFO] [Problem 66] mathverify=0.0 (0/12) | llm=0.0 (0/12) | avg_tokens=5444.0 | avg_time=304.0788s
+2026-03-15 11:09:00 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1604 llm=0.0 (17/106 runs correct)
+2026-03-15 11:09:00 [INFO] [66/12] Starting run ...
+2026-03-15 11:09:00 [DEBUG] [66/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:15:24 [INFO] [66/12] Done in 384.41s | correct=None | steps=232 | accepted=36 | rejected=196 | tokens=6026 | stop=finished
+2026-03-15 11:15:24 [DEBUG]   Saved /home/ruthvik/specreason/results/66/12.pickle
+2026-03-15 11:15:24 [INFO] [Problem 66] mathverify=0.0 (0/13) | llm=0.0 (0/13) | avg_tokens=5488.7692 | avg_time=309.8486s
+2026-03-15 11:15:24 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1589 llm=0.0 (17/107 runs correct)
+2026-03-15 11:15:24 [INFO] [66/13] Starting run ...
+2026-03-15 11:15:24 [DEBUG] [66/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:20:28 [INFO] [66/13] Done in 303.33s | correct=None | steps=168 | accepted=49 | rejected=119 | tokens=5305 | stop=finished
+2026-03-15 11:20:28 [DEBUG]   Saved /home/ruthvik/specreason/results/66/13.pickle
+2026-03-15 11:20:28 [INFO] [Problem 66] mathverify=0.0 (0/14) | llm=0.0 (0/14) | avg_tokens=5475.6429 | avg_time=308.9923s
+2026-03-15 11:20:28 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1574 llm=0.0 (17/108 runs correct)
+2026-03-15 11:20:28 [INFO] [66/14] Starting run ...
+2026-03-15 11:20:28 [DEBUG] [66/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:26:12 [INFO] [66/14] Done in 344.0s | correct=None | steps=240 | accepted=47 | rejected=193 | tokens=5637 | stop=finished
+2026-03-15 11:26:12 [DEBUG]   Saved /home/ruthvik/specreason/results/66/14.pickle
+2026-03-15 11:26:12 [INFO] [Problem 66] mathverify=0.0 (0/15) | llm=0.0 (0/15) | avg_tokens=5486.4 | avg_time=310.9699s
+2026-03-15 11:26:12 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.156 llm=0.0 (17/109 runs correct)
+2026-03-15 11:26:12 [INFO] [66/15] Starting run ...
+2026-03-15 11:26:12 [DEBUG] [66/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 66 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:32:06 [INFO] [66/15] Done in 354.41s | correct=None | steps=207 | accepted=32 | rejected=175 | tokens=5429 | stop=finished
+2026-03-15 11:32:06 [DEBUG]   Saved /home/ruthvik/specreason/results/66/15.pickle
+2026-03-15 11:32:06 [INFO] [Problem 66] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5482.8125 | avg_time=313.3477s
+2026-03-15 11:32:06 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1545 llm=0.0 (17/110 runs correct)
+2026-03-15 11:32:06 [INFO] Problem 66 finished in 5101.0s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 11:32:06 [INFO] [Problem 66] mathverify=0.0 (0/16) | llm=0.0 (0/16) | avg_tokens=5482.8125 | avg_time=313.3477s
+2026-03-15 11:32:06 [INFO] Experiment summary updated: 7/30 problems done | mathverify=0.1545 llm=0.0 (17/110 runs correct)
+2026-03-15 11:32:06 [INFO] 
+2026-03-15 11:32:06 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 11:32:06 [INFO] PROBLEM 67  (8/30)
+2026-03-15 11:32:06 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 11:32:06 [INFO] [67/0] Starting run ...
+2026-03-15 11:32:06 [DEBUG] [67/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:37:44 [INFO] [67/0] Done in 337.17s | correct=None | steps=199 | accepted=36 | rejected=163 | tokens=5671 | stop=finished
+2026-03-15 11:37:44 [DEBUG]   Saved /home/ruthvik/specreason/results/67/0.pickle
+2026-03-15 11:37:44 [INFO] [Problem 67] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5671.0 | avg_time=332.102s
+2026-03-15 11:37:44 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1532 llm=0.0 (17/111 runs correct)
+2026-03-15 11:37:44 [INFO] [67/1] Starting run ...
+2026-03-15 11:37:44 [DEBUG] [67/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:38:51 [INFO] [67/1] Done in 67.8s | correct=False | steps=44 | accepted=22 | rejected=22 | tokens=1369 | stop=finished
+2026-03-15 11:38:52 [DEBUG]   Saved /home/ruthvik/specreason/results/67/1.pickle
+2026-03-15 11:38:52 [INFO] [Problem 67] mathverify=0.5 (1/2) | llm=0.0 (0/2) | avg_tokens=3520.0 | avg_time=197.5255s
+2026-03-15 11:38:52 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1607 llm=0.0 (18/112 runs correct)
+2026-03-15 11:38:52 [INFO] [67/2] Starting run ...
+2026-03-15 11:38:52 [DEBUG] [67/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:44:50 [INFO] [67/2] Done in 358.25s | correct=False | steps=219 | accepted=31 | rejected=188 | tokens=5271 | stop=finished
+2026-03-15 11:44:50 [DEBUG]   Saved /home/ruthvik/specreason/results/67/2.pickle
+2026-03-15 11:44:50 [INFO] [Problem 67] mathverify=0.6667 (2/3) | llm=0.0 (0/3) | avg_tokens=4103.6667 | avg_time=249.2713s
+2026-03-15 11:44:50 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1681 llm=0.0 (19/113 runs correct)
+2026-03-15 11:44:50 [INFO] [67/3] Starting run ...
+2026-03-15 11:44:50 [DEBUG] [67/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:46:56 [INFO] [67/3] Done in 126.54s | correct=False | steps=97 | accepted=26 | rejected=71 | tokens=2370 | stop=finished
+2026-03-15 11:46:57 [DEBUG]   Saved /home/ruthvik/specreason/results/67/3.pickle
+2026-03-15 11:46:57 [INFO] [Problem 67] mathverify=0.75 (3/4) | llm=0.0 (0/4) | avg_tokens=3670.25 | avg_time=217.2772s
+2026-03-15 11:46:57 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1754 llm=0.0 (20/114 runs correct)
+2026-03-15 11:46:57 [INFO] [67/4] Starting run ...
+2026-03-15 11:46:57 [DEBUG] [67/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:53:23 [INFO] [67/4] Done in 386.29s | correct=None | steps=236 | accepted=47 | rejected=189 | tokens=6125 | stop=finished
+2026-03-15 11:53:23 [DEBUG]   Saved /home/ruthvik/specreason/results/67/4.pickle
+2026-03-15 11:53:23 [INFO] [Problem 67] mathverify=0.6 (3/5) | llm=0.0 (0/5) | avg_tokens=4161.2 | avg_time=250.0238s
+2026-03-15 11:53:23 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1739 llm=0.0 (20/115 runs correct)
+2026-03-15 11:53:23 [INFO] [67/5] Starting run ...
+2026-03-15 11:53:23 [DEBUG] [67/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 11:58:04 [INFO] [67/5] Done in 281.43s | correct=False | steps=291 | accepted=221 | rejected=70 | tokens=5201 | stop=finished
+2026-03-15 11:58:05 [DEBUG]   Saved /home/ruthvik/specreason/results/67/5.pickle
+2026-03-15 11:58:05 [INFO] [Problem 67] mathverify=0.6667 (4/6) | llm=0.0 (0/6) | avg_tokens=4334.5 | avg_time=254.3208s
+2026-03-15 11:58:05 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.181 llm=0.0 (21/116 runs correct)
+2026-03-15 11:58:05 [INFO] [67/6] Starting run ...
+2026-03-15 11:58:05 [DEBUG] [67/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:03:24 [INFO] [67/6] Done in 319.34s | correct=False | steps=246 | accepted=86 | rejected=160 | tokens=6036 | stop=finished
+2026-03-15 12:03:24 [DEBUG]   Saved /home/ruthvik/specreason/results/67/6.pickle
+2026-03-15 12:03:24 [INFO] [Problem 67] mathverify=0.7143 (5/7) | llm=0.0 (0/7) | avg_tokens=4577.5714 | avg_time=262.8233s
+2026-03-15 12:03:24 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.188 llm=0.0 (22/117 runs correct)
+2026-03-15 12:03:24 [INFO] [67/7] Starting run ...
+2026-03-15 12:03:24 [DEBUG] [67/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:06:09 [INFO] [67/7] Done in 165.35s | correct=False | steps=240 | accepted=172 | rejected=68 | tokens=4598 | stop=finished
+2026-03-15 12:06:09 [DEBUG]   Saved /home/ruthvik/specreason/results/67/7.pickle
+2026-03-15 12:06:09 [INFO] [Problem 67] mathverify=0.75 (6/8) | llm=0.0 (0/8) | avg_tokens=4580.125 | avg_time=249.9755s
+2026-03-15 12:06:09 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1949 llm=0.0 (23/118 runs correct)
+2026-03-15 12:06:09 [INFO] [67/8] Starting run ...
+2026-03-15 12:06:09 [DEBUG] [67/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:13:19 [INFO] [67/8] Done in 429.72s | correct=None | steps=368 | accepted=55 | rejected=313 | tokens=6245 | stop=finished
+2026-03-15 12:13:19 [DEBUG]   Saved /home/ruthvik/specreason/results/67/8.pickle
+2026-03-15 12:13:19 [INFO] [Problem 67] mathverify=0.6667 (6/9) | llm=0.0 (0/9) | avg_tokens=4765.1111 | avg_time=269.3394s
+2026-03-15 12:13:19 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.1933 llm=0.0 (23/119 runs correct)
+2026-03-15 12:13:19 [INFO] [67/9] Starting run ...
+2026-03-15 12:13:19 [DEBUG] [67/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:15:36 [INFO] [67/9] Done in 136.43s | correct=False | steps=124 | accepted=69 | rejected=55 | tokens=3299 | stop=finished
+2026-03-15 12:15:36 [DEBUG]   Saved /home/ruthvik/specreason/results/67/9.pickle
+2026-03-15 12:15:36 [INFO] [Problem 67] mathverify=0.7 (7/10) | llm=0.0 (0/10) | avg_tokens=4618.5 | avg_time=255.515s
+2026-03-15 12:15:36 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2 llm=0.0 (24/120 runs correct)
+2026-03-15 12:15:36 [INFO] [67/10] Starting run ...
+2026-03-15 12:15:36 [DEBUG] [67/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:16:38 [INFO] [67/10] Done in 62.33s | correct=False | steps=59 | accepted=34 | rejected=25 | tokens=1676 | stop=finished
+2026-03-15 12:16:38 [DEBUG]   Saved /home/ruthvik/specreason/results/67/10.pickle
+2026-03-15 12:16:38 [INFO] [Problem 67] mathverify=0.7273 (8/11) | llm=0.0 (0/11) | avg_tokens=4351.0 | avg_time=237.4812s
+2026-03-15 12:16:38 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2066 llm=0.0 (25/121 runs correct)
+2026-03-15 12:16:38 [INFO] [67/11] Starting run ...
+2026-03-15 12:16:38 [DEBUG] [67/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:21:48 [INFO] [67/11] Done in 309.71s | correct=False | steps=338 | accepted=247 | rejected=91 | tokens=5655 | stop=finished
+2026-03-15 12:21:48 [DEBUG]   Saved /home/ruthvik/specreason/results/67/11.pickle
+2026-03-15 12:21:48 [INFO] [Problem 67] mathverify=0.75 (9/12) | llm=0.0 (0/12) | avg_tokens=4459.6667 | avg_time=243.0417s
+2026-03-15 12:21:48 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2131 llm=0.0 (26/122 runs correct)
+2026-03-15 12:21:48 [INFO] [67/12] Starting run ...
+2026-03-15 12:21:48 [DEBUG] [67/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:28:42 [INFO] [67/12] Done in 413.85s | correct=None | steps=292 | accepted=51 | rejected=241 | tokens=6283 | stop=finished
+2026-03-15 12:28:42 [DEBUG]   Saved /home/ruthvik/specreason/results/67/12.pickle
+2026-03-15 12:28:42 [INFO] [Problem 67] mathverify=0.6923 (9/13) | llm=0.0 (0/13) | avg_tokens=4599.9231 | avg_time=255.7565s
+2026-03-15 12:28:42 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2114 llm=0.0 (26/123 runs correct)
+2026-03-15 12:28:42 [INFO] [67/13] Starting run ...
+2026-03-15 12:28:42 [DEBUG] [67/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:30:57 [INFO] [67/13] Done in 134.42s | correct=False | steps=150 | accepted=97 | rejected=53 | tokens=3130 | stop=finished
+2026-03-15 12:30:57 [DEBUG]   Saved /home/ruthvik/specreason/results/67/13.pickle
+2026-03-15 12:30:57 [INFO] [Problem 67] mathverify=0.7143 (10/14) | llm=0.0 (0/14) | avg_tokens=4494.9286 | avg_time=246.7149s
+2026-03-15 12:30:57 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2177 llm=0.0 (27/124 runs correct)
+2026-03-15 12:30:57 [INFO] [67/14] Starting run ...
+2026-03-15 12:30:57 [DEBUG] [67/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:34:29 [INFO] [67/14] Done in 212.05s | correct=False | steps=145 | accepted=51 | rejected=94 | tokens=3927 | stop=finished
+2026-03-15 12:34:29 [DEBUG]   Saved /home/ruthvik/specreason/results/67/14.pickle
+2026-03-15 12:34:29 [INFO] [Problem 67] mathverify=0.7333 (11/15) | llm=0.0 (0/15) | avg_tokens=4457.0667 | avg_time=244.0545s
+2026-03-15 12:34:29 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.224 llm=0.0 (28/125 runs correct)
+2026-03-15 12:34:29 [INFO] [67/15] Starting run ...
+2026-03-15 12:34:29 [DEBUG] [67/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 67 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:40:32 [INFO] [67/15] Done in 363.08s | correct=None | steps=207 | accepted=49 | rejected=158 | tokens=5986 | stop=finished
+2026-03-15 12:40:32 [DEBUG]   Saved /home/ruthvik/specreason/results/67/15.pickle
+2026-03-15 12:40:32 [INFO] [Problem 67] mathverify=0.6875 (11/16) | llm=0.0 (0/16) | avg_tokens=4552.625 | avg_time=251.1546s
+2026-03-15 12:40:32 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2222 llm=0.0 (28/126 runs correct)
+2026-03-15 12:40:32 [INFO] Problem 67 finished in 4105.5s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 12:40:32 [INFO] [Problem 67] mathverify=0.6875 (11/16) | llm=0.0 (0/16) | avg_tokens=4552.625 | avg_time=251.1546s
+2026-03-15 12:40:32 [INFO] Experiment summary updated: 8/30 problems done | mathverify=0.2222 llm=0.0 (28/126 runs correct)
+2026-03-15 12:40:32 [INFO] 
+2026-03-15 12:40:32 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 12:40:32 [INFO] PROBLEM 68  (9/30)
+2026-03-15 12:40:32 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 12:40:32 [INFO] [68/0] Starting run ...
+2026-03-15 12:40:32 [DEBUG] [68/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:43:04 [INFO] [68/0] Done in 152.29s | correct=None | steps=154 | accepted=103 | rejected=51 | tokens=5482 | stop=finished
+2026-03-15 12:43:04 [DEBUG]   Saved /home/ruthvik/specreason/results/68/0.pickle
+2026-03-15 12:43:04 [INFO] [Problem 68] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5482.0 | avg_time=146.988s
+2026-03-15 12:43:04 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2205 llm=0.0 (28/127 runs correct)
+2026-03-15 12:43:04 [INFO] [68/1] Starting run ...
+2026-03-15 12:43:04 [DEBUG] [68/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:46:17 [INFO] [68/1] Done in 193.02s | correct=None | steps=280 | accepted=181 | rejected=99 | tokens=5501 | stop=finished
+2026-03-15 12:46:17 [DEBUG]   Saved /home/ruthvik/specreason/results/68/1.pickle
+2026-03-15 12:46:17 [INFO] [Problem 68] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=5491.5 | avg_time=167.236s
+2026-03-15 12:46:17 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2188 llm=0.0 (28/128 runs correct)
+2026-03-15 12:46:17 [INFO] [68/2] Starting run ...
+2026-03-15 12:46:17 [DEBUG] [68/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:49:41 [INFO] [68/2] Done in 203.4s | correct=None | steps=165 | accepted=93 | rejected=72 | tokens=6101 | stop=finished
+2026-03-15 12:49:41 [DEBUG]   Saved /home/ruthvik/specreason/results/68/2.pickle
+2026-03-15 12:49:41 [INFO] [Problem 68] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=5694.6667 | avg_time=177.5367s
+2026-03-15 12:49:41 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2171 llm=0.0 (28/129 runs correct)
+2026-03-15 12:49:41 [INFO] [68/3] Starting run ...
+2026-03-15 12:49:41 [DEBUG] [68/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:52:02 [INFO] [68/3] Done in 140.85s | correct=None | steps=106 | accepted=55 | rejected=51 | tokens=5183 | stop=finished
+2026-03-15 12:52:02 [DEBUG]   Saved /home/ruthvik/specreason/results/68/3.pickle
+2026-03-15 12:52:02 [INFO] [Problem 68] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=5566.75 | avg_time=167.0517s
+2026-03-15 12:52:02 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2154 llm=0.0 (28/130 runs correct)
+2026-03-15 12:52:02 [INFO] [68/4] Starting run ...
+2026-03-15 12:52:02 [DEBUG] [68/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:53:42 [INFO] [68/4] Done in 99.68s | correct=False | steps=85 | accepted=70 | rejected=15 | tokens=4302 | stop=finished
+2026-03-15 12:53:42 [DEBUG]   Saved /home/ruthvik/specreason/results/68/4.pickle
+2026-03-15 12:53:42 [INFO] [Problem 68] mathverify=0.2 (1/5) | llm=0.0 (0/5) | avg_tokens=5313.8 | avg_time=152.5386s
+2026-03-15 12:53:42 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2214 llm=0.0 (29/131 runs correct)
+2026-03-15 12:53:42 [INFO] [68/5] Starting run ...
+2026-03-15 12:53:42 [DEBUG] [68/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:56:12 [INFO] [68/5] Done in 150.6s | correct=None | steps=201 | accepted=152 | rejected=49 | tokens=5348 | stop=finished
+2026-03-15 12:56:12 [DEBUG]   Saved /home/ruthvik/specreason/results/68/5.pickle
+2026-03-15 12:56:12 [INFO] [Problem 68] mathverify=0.1667 (1/6) | llm=0.0 (0/6) | avg_tokens=5319.5 | avg_time=151.3067s
+2026-03-15 12:56:12 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2197 llm=0.0 (29/132 runs correct)
+2026-03-15 12:56:12 [INFO] [68/6] Starting run ...
+2026-03-15 12:56:12 [DEBUG] [68/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 12:58:11 [INFO] [68/6] Done in 119.01s | correct=False | steps=151 | accepted=99 | rejected=52 | tokens=3890 | stop=finished
+2026-03-15 12:58:11 [DEBUG]   Saved /home/ruthvik/specreason/results/68/6.pickle
+2026-03-15 12:58:11 [INFO] [Problem 68] mathverify=0.2857 (2/7) | llm=0.0 (0/7) | avg_tokens=5115.2857 | avg_time=145.916s
+2026-03-15 12:58:11 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2256 llm=0.0 (30/133 runs correct)
+2026-03-15 12:58:11 [INFO] [68/7] Starting run ...
+2026-03-15 12:58:11 [DEBUG] [68/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:01:51 [INFO] [68/7] Done in 219.73s | correct=None | steps=75 | accepted=30 | rejected=45 | tokens=4977 | stop=finished
+2026-03-15 13:01:51 [DEBUG]   Saved /home/ruthvik/specreason/results/68/7.pickle
+2026-03-15 13:01:51 [INFO] [Problem 68] mathverify=0.25 (2/8) | llm=0.0 (0/8) | avg_tokens=5098.0 | avg_time=154.4869s
+2026-03-15 13:01:51 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2239 llm=0.0 (30/134 runs correct)
+2026-03-15 13:01:51 [INFO] [68/8] Starting run ...
+2026-03-15 13:01:51 [DEBUG] [68/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:03:47 [INFO] [68/8] Done in 115.89s | correct=False | steps=167 | accepted=136 | rejected=31 | tokens=4508 | stop=finished
+2026-03-15 13:03:47 [DEBUG]   Saved /home/ruthvik/specreason/results/68/8.pickle
+2026-03-15 13:03:47 [INFO] [Problem 68] mathverify=0.3333 (3/9) | llm=0.0 (0/9) | avg_tokens=5032.4444 | avg_time=149.6057s
+2026-03-15 13:03:47 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2296 llm=0.0 (31/135 runs correct)
+2026-03-15 13:03:47 [INFO] [68/9] Starting run ...
+2026-03-15 13:03:47 [DEBUG] [68/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:06:42 [INFO] [68/9] Done in 174.91s | correct=False | steps=289 | accepted=196 | rejected=93 | tokens=5943 | stop=finished
+2026-03-15 13:06:42 [DEBUG]   Saved /home/ruthvik/specreason/results/68/9.pickle
+2026-03-15 13:06:42 [INFO] [Problem 68] mathverify=0.4 (4/10) | llm=0.0 (0/10) | avg_tokens=5123.5 | avg_time=151.5803s
+2026-03-15 13:06:42 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2353 llm=0.0 (32/136 runs correct)
+2026-03-15 13:06:42 [INFO] [68/10] Starting run ...
+2026-03-15 13:06:42 [DEBUG] [68/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:08:46 [INFO] [68/10] Done in 123.28s | correct=False | steps=131 | accepted=101 | rejected=30 | tokens=4129 | stop=finished
+2026-03-15 13:08:46 [DEBUG]   Saved /home/ruthvik/specreason/results/68/10.pickle
+2026-03-15 13:08:46 [INFO] [Problem 68] mathverify=0.4545 (5/11) | llm=0.0 (0/11) | avg_tokens=5033.0909 | avg_time=148.5311s
+2026-03-15 13:08:46 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2409 llm=0.0 (33/137 runs correct)
+2026-03-15 13:08:46 [INFO] [68/11] Starting run ...
+2026-03-15 13:08:46 [DEBUG] [68/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:11:10 [INFO] [68/11] Done in 144.06s | correct=None | steps=145 | accepted=97 | rejected=48 | tokens=5394 | stop=finished
+2026-03-15 13:11:10 [DEBUG]   Saved /home/ruthvik/specreason/results/68/11.pickle
+2026-03-15 13:11:10 [INFO] [Problem 68] mathverify=0.4167 (5/12) | llm=0.0 (0/12) | avg_tokens=5063.1667 | avg_time=147.7167s
+2026-03-15 13:11:10 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2391 llm=0.0 (33/138 runs correct)
+2026-03-15 13:11:10 [INFO] [68/12] Starting run ...
+2026-03-15 13:11:10 [DEBUG] [68/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:13:42 [INFO] [68/12] Done in 152.34s | correct=None | steps=225 | accepted=177 | rejected=48 | tokens=6079 | stop=finished
+2026-03-15 13:13:42 [DEBUG]   Saved /home/ruthvik/specreason/results/68/12.pickle
+2026-03-15 13:13:42 [INFO] [Problem 68] mathverify=0.3846 (5/13) | llm=0.0 (0/13) | avg_tokens=5141.3077 | avg_time=147.6546s
+2026-03-15 13:13:42 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2374 llm=0.0 (33/139 runs correct)
+2026-03-15 13:13:42 [INFO] [68/13] Starting run ...
+2026-03-15 13:13:42 [DEBUG] [68/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:16:04 [INFO] [68/13] Done in 141.89s | correct=False | steps=138 | accepted=88 | rejected=50 | tokens=5031 | stop=finished
+2026-03-15 13:16:04 [DEBUG]   Saved /home/ruthvik/specreason/results/68/13.pickle
+2026-03-15 13:16:04 [INFO] [Problem 68] mathverify=0.4286 (6/14) | llm=0.0 (0/14) | avg_tokens=5133.4286 | avg_time=146.8626s
+2026-03-15 13:16:04 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2429 llm=0.0 (34/140 runs correct)
+2026-03-15 13:16:04 [INFO] [68/14] Starting run ...
+2026-03-15 13:16:04 [DEBUG] [68/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:18:12 [INFO] [68/14] Done in 127.88s | correct=False | steps=141 | accepted=124 | rejected=17 | tokens=4880 | stop=finished
+2026-03-15 13:18:12 [DEBUG]   Saved /home/ruthvik/specreason/results/68/14.pickle
+2026-03-15 13:18:12 [INFO] [Problem 68] mathverify=0.4667 (7/15) | llm=0.0 (0/15) | avg_tokens=5116.5333 | avg_time=145.2386s
+2026-03-15 13:18:12 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2482 llm=0.0 (35/141 runs correct)
+2026-03-15 13:18:12 [INFO] [68/15] Starting run ...
+2026-03-15 13:18:12 [DEBUG] [68/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 68 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:20:49 [INFO] [68/15] Done in 156.54s | correct=None | steps=159 | accepted=98 | rejected=61 | tokens=5019 | stop=finished
+2026-03-15 13:20:49 [DEBUG]   Saved /home/ruthvik/specreason/results/68/15.pickle
+2026-03-15 13:20:49 [INFO] [Problem 68] mathverify=0.4375 (7/16) | llm=0.0 (0/16) | avg_tokens=5110.4375 | avg_time=145.6099s
+2026-03-15 13:20:49 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2465 llm=0.0 (35/142 runs correct)
+2026-03-15 13:20:49 [INFO] Problem 68 finished in 2416.8s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 13:20:49 [INFO] [Problem 68] mathverify=0.4375 (7/16) | llm=0.0 (0/16) | avg_tokens=5110.4375 | avg_time=145.6099s
+2026-03-15 13:20:49 [INFO] Experiment summary updated: 9/30 problems done | mathverify=0.2465 llm=0.0 (35/142 runs correct)
+2026-03-15 13:20:49 [INFO] 
+2026-03-15 13:20:49 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 13:20:49 [INFO] PROBLEM 69  (10/30)
+2026-03-15 13:20:49 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 13:20:49 [INFO] [69/0] Starting run ...
+2026-03-15 13:20:49 [DEBUG] [69/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:22:47 [INFO] [69/0] Done in 118.24s | correct=False | steps=165 | accepted=132 | rejected=33 | tokens=4605 | stop=finished
+2026-03-15 13:22:47 [DEBUG]   Saved /home/ruthvik/specreason/results/69/0.pickle
+2026-03-15 13:22:47 [INFO] [Problem 69] mathverify=1.0 (1/1) | llm=0.0 (0/1) | avg_tokens=4605.0 | avg_time=112.893s
+2026-03-15 13:22:47 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2517 llm=0.0 (36/143 runs correct)
+2026-03-15 13:22:47 [INFO] [69/1] Starting run ...
+2026-03-15 13:22:47 [DEBUG] [69/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:24:17 [INFO] [69/1] Done in 89.68s | correct=False | steps=116 | accepted=99 | rejected=17 | tokens=3863 | stop=finished
+2026-03-15 13:24:17 [DEBUG]   Saved /home/ruthvik/specreason/results/69/1.pickle
+2026-03-15 13:24:17 [INFO] [Problem 69] mathverify=1.0 (2/2) | llm=0.0 (0/2) | avg_tokens=4234.0 | avg_time=98.7095s
+2026-03-15 13:24:17 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2569 llm=0.0 (37/144 runs correct)
+2026-03-15 13:24:17 [INFO] [69/2] Starting run ...
+2026-03-15 13:24:17 [DEBUG] [69/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:25:46 [INFO] [69/2] Done in 89.1s | correct=False | steps=131 | accepted=118 | rejected=13 | tokens=4878 | stop=finished
+2026-03-15 13:25:46 [DEBUG]   Saved /home/ruthvik/specreason/results/69/2.pickle
+2026-03-15 13:25:46 [INFO] [Problem 69] mathverify=1.0 (3/3) | llm=0.0 (0/3) | avg_tokens=4448.6667 | avg_time=93.7077s
+2026-03-15 13:25:46 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2621 llm=0.0 (38/145 runs correct)
+2026-03-15 13:25:46 [INFO] [69/3] Starting run ...
+2026-03-15 13:25:46 [DEBUG] [69/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:27:44 [INFO] [69/3] Done in 117.63s | correct=False | steps=159 | accepted=150 | rejected=9 | tokens=5236 | stop=finished
+2026-03-15 13:27:44 [DEBUG]   Saved /home/ruthvik/specreason/results/69/3.pickle
+2026-03-15 13:27:44 [INFO] [Problem 69] mathverify=1.0 (4/4) | llm=0.0 (0/4) | avg_tokens=4645.5 | avg_time=98.3457s
+2026-03-15 13:27:44 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2671 llm=0.0 (39/146 runs correct)
+2026-03-15 13:27:44 [INFO] [69/4] Starting run ...
+2026-03-15 13:27:44 [DEBUG] [69/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:29:02 [INFO] [69/4] Done in 77.84s | correct=False | steps=67 | accepted=53 | rejected=14 | tokens=2758 | stop=finished
+2026-03-15 13:29:02 [DEBUG]   Saved /home/ruthvik/specreason/results/69/4.pickle
+2026-03-15 13:29:02 [INFO] [Problem 69] mathverify=1.0 (5/5) | llm=0.0 (0/5) | avg_tokens=4268.0 | avg_time=93.2004s
+2026-03-15 13:29:02 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2721 llm=0.0 (40/147 runs correct)
+2026-03-15 13:29:02 [INFO] [69/5] Starting run ...
+2026-03-15 13:29:02 [DEBUG] [69/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:30:42 [INFO] [69/5] Done in 100.68s | correct=False | steps=129 | accepted=115 | rejected=14 | tokens=4587 | stop=finished
+2026-03-15 13:30:43 [DEBUG]   Saved /home/ruthvik/specreason/results/69/5.pickle
+2026-03-15 13:30:43 [INFO] [Problem 69] mathverify=1.0 (6/6) | llm=0.0 (0/6) | avg_tokens=4321.1667 | avg_time=93.4965s
+2026-03-15 13:30:43 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.277 llm=0.0 (41/148 runs correct)
+2026-03-15 13:30:43 [INFO] [69/6] Starting run ...
+2026-03-15 13:30:43 [DEBUG] [69/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:32:17 [INFO] [69/6] Done in 94.4s | correct=False | steps=56 | accepted=36 | rejected=20 | tokens=2690 | stop=finished
+2026-03-15 13:32:17 [DEBUG]   Saved /home/ruthvik/specreason/results/69/6.pickle
+2026-03-15 13:32:17 [INFO] [Problem 69] mathverify=1.0 (7/7) | llm=0.0 (0/7) | avg_tokens=4088.1429 | avg_time=92.8784s
+2026-03-15 13:32:17 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2819 llm=0.0 (42/149 runs correct)
+2026-03-15 13:32:17 [INFO] [69/7] Starting run ...
+2026-03-15 13:32:17 [DEBUG] [69/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:34:25 [INFO] [69/7] Done in 127.74s | correct=False | steps=156 | accepted=126 | rejected=30 | tokens=4904 | stop=finished
+2026-03-15 13:34:25 [DEBUG]   Saved /home/ruthvik/specreason/results/69/7.pickle
+2026-03-15 13:34:25 [INFO] [Problem 69] mathverify=1.0 (8/8) | llm=0.0 (0/8) | avg_tokens=4190.125 | avg_time=96.563s
+2026-03-15 13:34:25 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2867 llm=0.0 (43/150 runs correct)
+2026-03-15 13:34:25 [INFO] [69/8] Starting run ...
+2026-03-15 13:34:25 [DEBUG] [69/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:36:07 [INFO] [69/8] Done in 102.27s | correct=False | steps=137 | accepted=118 | rejected=19 | tokens=3964 | stop=finished
+2026-03-15 13:36:07 [DEBUG]   Saved /home/ruthvik/specreason/results/69/8.pickle
+2026-03-15 13:36:07 [INFO] [Problem 69] mathverify=1.0 (9/9) | llm=0.0 (0/9) | avg_tokens=4165.0 | avg_time=96.6011s
+2026-03-15 13:36:07 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2914 llm=0.0 (44/151 runs correct)
+2026-03-15 13:36:07 [INFO] [69/9] Starting run ...
+2026-03-15 13:36:07 [DEBUG] [69/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:38:15 [INFO] [69/9] Done in 127.42s | correct=False | steps=141 | accepted=121 | rejected=20 | tokens=4431 | stop=finished
+2026-03-15 13:38:15 [DEBUG]   Saved /home/ruthvik/specreason/results/69/9.pickle
+2026-03-15 13:38:15 [INFO] [Problem 69] mathverify=1.0 (10/10) | llm=0.0 (0/10) | avg_tokens=4191.6 | avg_time=99.1501s
+2026-03-15 13:38:15 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.2961 llm=0.0 (45/152 runs correct)
+2026-03-15 13:38:15 [INFO] [69/10] Starting run ...
+2026-03-15 13:38:15 [DEBUG] [69/10] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 10 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:40:10 [INFO] [69/10] Done in 115.21s | correct=False | steps=94 | accepted=58 | rejected=36 | tokens=3007 | stop=finished
+2026-03-15 13:40:10 [DEBUG]   Saved /home/ruthvik/specreason/results/69/10.pickle
+2026-03-15 13:40:10 [INFO] [Problem 69] mathverify=1.0 (11/11) | llm=0.0 (0/11) | avg_tokens=4083.9091 | avg_time=100.1445s
+2026-03-15 13:40:10 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3007 llm=0.0 (46/153 runs correct)
+2026-03-15 13:40:10 [INFO] [69/11] Starting run ...
+2026-03-15 13:40:10 [DEBUG] [69/11] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 11 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:41:57 [INFO] [69/11] Done in 106.81s | correct=False | steps=170 | accepted=155 | rejected=15 | tokens=5184 | stop=finished
+2026-03-15 13:41:57 [DEBUG]   Saved /home/ruthvik/specreason/results/69/11.pickle
+2026-03-15 13:41:57 [INFO] [Problem 69] mathverify=1.0 (12/12) | llm=0.0 (0/12) | avg_tokens=4175.5833 | avg_time=100.2608s
+2026-03-15 13:41:57 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3052 llm=0.0 (47/154 runs correct)
+2026-03-15 13:41:57 [INFO] [69/12] Starting run ...
+2026-03-15 13:41:57 [DEBUG] [69/12] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 12 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:42:44 [INFO] [69/12] Done in 47.21s | correct=False | steps=55 | accepted=44 | rejected=11 | tokens=2462 | stop=finished
+2026-03-15 13:42:44 [DEBUG]   Saved /home/ruthvik/specreason/results/69/12.pickle
+2026-03-15 13:42:44 [INFO] [Problem 69] mathverify=1.0 (13/13) | llm=0.0 (0/13) | avg_tokens=4043.7692 | avg_time=95.7874s
+2026-03-15 13:42:44 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3097 llm=0.0 (48/155 runs correct)
+2026-03-15 13:42:44 [INFO] [69/13] Starting run ...
+2026-03-15 13:42:44 [DEBUG] [69/13] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 13 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:45:08 [INFO] [69/13] Done in 143.82s | correct=False | steps=116 | accepted=77 | rejected=39 | tokens=4489 | stop=finished
+2026-03-15 13:45:08 [DEBUG]   Saved /home/ruthvik/specreason/results/69/13.pickle
+2026-03-15 13:45:08 [INFO] [Problem 69] mathverify=1.0 (14/14) | llm=0.0 (0/14) | avg_tokens=4075.5714 | avg_time=98.8571s
+2026-03-15 13:45:08 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3141 llm=0.0 (49/156 runs correct)
+2026-03-15 13:45:08 [INFO] [69/14] Starting run ...
+2026-03-15 13:45:08 [DEBUG] [69/14] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 14 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:46:51 [INFO] [69/14] Done in 102.44s | correct=False | steps=157 | accepted=140 | rejected=17 | tokens=5050 | stop=finished
+2026-03-15 13:46:51 [DEBUG]   Saved /home/ruthvik/specreason/results/69/14.pickle
+2026-03-15 13:46:51 [INFO] [Problem 69] mathverify=1.0 (15/15) | llm=0.0 (0/15) | avg_tokens=4140.5333 | avg_time=98.7434s
+2026-03-15 13:46:51 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3185 llm=0.0 (50/157 runs correct)
+2026-03-15 13:46:51 [INFO] [69/15] Starting run ...
+2026-03-15 13:46:51 [DEBUG] [69/15] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 69 --repeat_id 15 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:48:16 [INFO] [69/15] Done in 85.87s | correct=False | steps=125 | accepted=107 | rejected=18 | tokens=4102 | stop=finished
+2026-03-15 13:48:17 [DEBUG]   Saved /home/ruthvik/specreason/results/69/15.pickle
+2026-03-15 13:48:17 [INFO] [Problem 69] mathverify=1.0 (16/16) | llm=0.0 (0/16) | avg_tokens=4138.125 | avg_time=97.6202s
+2026-03-15 13:48:17 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3228 llm=0.0 (51/158 runs correct)
+2026-03-15 13:48:17 [INFO] Problem 69 finished in 1647.8s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 13:48:17 [INFO] [Problem 69] mathverify=1.0 (16/16) | llm=0.0 (0/16) | avg_tokens=4138.125 | avg_time=97.6202s
+2026-03-15 13:48:17 [INFO] Experiment summary updated: 10/30 problems done | mathverify=0.3228 llm=0.0 (51/158 runs correct)
+2026-03-15 13:48:17 [INFO] 
+2026-03-15 13:48:17 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 13:48:17 [INFO] PROBLEM 70  (11/30)
+2026-03-15 13:48:17 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 13:48:17 [INFO] [70/0] Starting run ...
+2026-03-15 13:48:17 [DEBUG] [70/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:53:21 [INFO] [70/0] Done in 304.88s | correct=None | steps=182 | accepted=70 | rejected=112 | tokens=5800 | stop=finished
+2026-03-15 13:53:22 [DEBUG]   Saved /home/ruthvik/specreason/results/70/0.pickle
+2026-03-15 13:53:22 [INFO] [Problem 70] mathverify=0.0 (0/1) | llm=0.0 (0/1) | avg_tokens=5800.0 | avg_time=299.484s
+2026-03-15 13:53:22 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3208 llm=0.0 (51/159 runs correct)
+2026-03-15 13:53:22 [INFO] [70/1] Starting run ...
+2026-03-15 13:53:22 [DEBUG] [70/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 13:58:58 [INFO] [70/1] Done in 336.74s | correct=None | steps=196 | accepted=96 | rejected=100 | tokens=6566 | stop=finished
+2026-03-15 13:58:58 [DEBUG]   Saved /home/ruthvik/specreason/results/70/1.pickle
+2026-03-15 13:58:58 [INFO] [Problem 70] mathverify=0.0 (0/2) | llm=0.0 (0/2) | avg_tokens=6183.0 | avg_time=315.486s
+2026-03-15 13:58:58 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3187 llm=0.0 (51/160 runs correct)
+2026-03-15 13:58:58 [INFO] [70/2] Starting run ...
+2026-03-15 13:58:58 [DEBUG] [70/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:04:26 [INFO] [70/2] Done in 327.25s | correct=None | steps=183 | accepted=73 | rejected=110 | tokens=6262 | stop=finished
+2026-03-15 14:04:26 [DEBUG]   Saved /home/ruthvik/specreason/results/70/2.pickle
+2026-03-15 14:04:26 [INFO] [Problem 70] mathverify=0.0 (0/3) | llm=0.0 (0/3) | avg_tokens=6209.3333 | avg_time=317.717s
+2026-03-15 14:04:26 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3168 llm=0.0 (51/161 runs correct)
+2026-03-15 14:04:26 [INFO] [70/3] Starting run ...
+2026-03-15 14:04:26 [DEBUG] [70/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:09:46 [INFO] [70/3] Done in 320.51s | correct=None | steps=175 | accepted=104 | rejected=71 | tokens=6362 | stop=finished
+2026-03-15 14:09:46 [DEBUG]   Saved /home/ruthvik/specreason/results/70/3.pickle
+2026-03-15 14:09:46 [INFO] [Problem 70] mathverify=0.0 (0/4) | llm=0.0 (0/4) | avg_tokens=6247.5 | avg_time=317.121s
+2026-03-15 14:09:46 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3148 llm=0.0 (51/162 runs correct)
+2026-03-15 14:09:46 [INFO] [70/4] Starting run ...
+2026-03-15 14:09:46 [DEBUG] [70/4] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 4 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:14:30 [INFO] [70/4] Done in 284.12s | correct=None | steps=182 | accepted=76 | rejected=106 | tokens=5955 | stop=finished
+2026-03-15 14:14:31 [DEBUG]   Saved /home/ruthvik/specreason/results/70/4.pickle
+2026-03-15 14:14:31 [INFO] [Problem 70] mathverify=0.0 (0/5) | llm=0.0 (0/5) | avg_tokens=6189.0 | avg_time=309.481s
+2026-03-15 14:14:31 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3129 llm=0.0 (51/163 runs correct)
+2026-03-15 14:14:31 [INFO] [70/5] Starting run ...
+2026-03-15 14:14:31 [DEBUG] [70/5] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 5 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:20:40 [INFO] [70/5] Done in 369.25s | correct=None | steps=180 | accepted=41 | rejected=139 | tokens=6351 | stop=finished
+2026-03-15 14:20:40 [DEBUG]   Saved /home/ruthvik/specreason/results/70/5.pickle
+2026-03-15 14:20:40 [INFO] [Problem 70] mathverify=0.0 (0/6) | llm=0.0 (0/6) | avg_tokens=6216.0 | avg_time=318.5693s
+2026-03-15 14:20:40 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.311 llm=0.0 (51/164 runs correct)
+2026-03-15 14:20:40 [INFO] [70/6] Starting run ...
+2026-03-15 14:20:40 [DEBUG] [70/6] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 6 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:26:14 [INFO] [70/6] Done in 334.11s | correct=None | steps=180 | accepted=65 | rejected=115 | tokens=6071 | stop=finished
+2026-03-15 14:26:14 [DEBUG]   Saved /home/ruthvik/specreason/results/70/6.pickle
+2026-03-15 14:26:14 [INFO] [Problem 70] mathverify=0.0 (0/7) | llm=0.0 (0/7) | avg_tokens=6195.2857 | avg_time=320.0011s
+2026-03-15 14:26:14 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3091 llm=0.0 (51/165 runs correct)
+2026-03-15 14:26:14 [INFO] [70/7] Starting run ...
+2026-03-15 14:26:14 [DEBUG] [70/7] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 7 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:31:20 [INFO] [70/7] Done in 305.75s | correct=None | steps=121 | accepted=38 | rejected=83 | tokens=5373 | stop=finished
+2026-03-15 14:31:20 [DEBUG]   Saved /home/ruthvik/specreason/results/70/7.pickle
+2026-03-15 14:31:20 [INFO] [Problem 70] mathverify=0.0 (0/8) | llm=0.0 (0/8) | avg_tokens=6092.5 | avg_time=317.5672s
+2026-03-15 14:31:20 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3072 llm=0.0 (51/166 runs correct)
+2026-03-15 14:31:20 [INFO] [70/8] Starting run ...
+2026-03-15 14:31:20 [DEBUG] [70/8] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 8 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 14:36:43 [INFO] [70/8] Done in 323.18s | correct=None | steps=154 | accepted=66 | rejected=88 | tokens=6256 | stop=finished
+2026-03-15 14:36:43 [DEBUG]   Saved /home/ruthvik/specreason/results/70/8.pickle
+2026-03-15 14:36:43 [INFO] [Problem 70] mathverify=0.0 (0/9) | llm=0.0 (0/9) | avg_tokens=6110.6667 | avg_time=317.6077s
+2026-03-15 14:36:43 [INFO] Experiment summary updated: 11/30 problems done | mathverify=0.3054 llm=0.0 (51/167 runs correct)
+2026-03-15 14:36:43 [INFO] [70/9] Starting run ...
+2026-03-15 14:36:43 [DEBUG] [70/9] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 70 --repeat_id 9 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet

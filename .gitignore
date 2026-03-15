@@ -11,7 +11,7 @@ ENV/
 env/
 
 # Streamlit
-# .streamlit/
+.streamlit/
 
 # IDEs / Editors
 .vscode/
@@ -20,11 +20,13 @@ env/
 *.swo
 
 # Project specific outputs
-# results_mock/
-# results_mock_fallback/
-# playground/
-# *.pickle
-# *.log
+results_mock/
+results_mock_fallback/
+playground/
+*.pickle
+*.log
+*.txt
+summary.json
 
 # OS generated files
 .DS_Store

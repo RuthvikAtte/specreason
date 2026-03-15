@@ -406,6 +406,10 @@ try:
             break
 except ValueError:
     logging.error(f"ValueError caught in chat template application, continuing")
+except openai.BadRequestError as e:
+    logging.warning(f"Context length exceeded at step {step_id}, stopping gracefully: {e}")
+    if metadata_list:
+        metadata_list[-1]["stop_reason"] = "context_overflow"
 
 os.makedirs(os.path.dirname(f"{output_filename}.pickle"), exist_ok=True)
 
