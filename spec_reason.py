@@ -15,9 +15,48 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset, load_from_disk
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 def get_avg_score(scores):
-    return statistics.mean([x for x in scores if x is not None])
+    return sum(scores) / len(scores) if scores else 0
+
+def extract_boxed(text):
+    start_idx = text.find("\\boxed{")
+    if start_idx == -1:
+        return None
+    start_idx += len("\\boxed{")
+    brace_count = 1
+    for i in range(start_idx, len(text)):
+        if text[i] == '{':
+            brace_count += 1
+        elif text[i] == '}':
+            brace_count -= 1
+            if brace_count == 0:
+                return text[start_idx:i]
+    return None
+
+def verify_candidate_answer(problem, candidate_answer, model_size="32b", options=None):
+    client = clients[model_size]
+    messages = [
+        {"role": "user", "content": get_first_user_msg(problem, options)},
+        {"role": "assistant", "content": f"The candidate answer is \\boxed{{{candidate_answer}}}."},
+        {"role": "user", "content": "Is this candidate answer definitely correct for this problem? Provide a single word answer: YES or NO."},
+    ]
+
+    max_context_len = 8192
+    est_prompt_len = sum(len(m["content"]) for m in messages) // 2 + 100
+    if est_prompt_len >= max_context_len:
+        logging.warning("Verify func: Context length maximum reached!")
+        return False, 0.0
+
+    start_time = time.perf_counter()
+    response = client.chat.completions.create(
+        model=get_model(model_size),
+        messages=messages,
+        temperature=0.0,
+        max_tokens=16
+    )
+    return "YES" in response.choices[0].message.content.upper(), time.perf_counter() - start_time
 
 def get_frequency(scores):
     return dict(Counter(scores))
@@ -76,7 +115,7 @@ def get_first_user_msg(problem, options=None):
         )
 
 # %%
-def generate_new_step(problem, steps_so_far, model_size, options=None, stop_token="\n\n"):
+def generate_new_step(problem, steps_so_far, model_size, options=None, stop_token="\n\n", quiet=False):
     client = clients[model_size]
     
     if steps_so_far == []:  # first step
@@ -92,20 +131,43 @@ def generate_new_step(problem, steps_so_far, model_size, options=None, stop_toke
         ]
         extra_body = {"add_generation_prompt": False, "continue_final_message": True}
     
+    # Calculate available token length. We assume a loose over-estimation of context required. 
+    max_context_len = 8192
+    # The character-based division was too loose for math tokens. Better estimate: chars / 2.5 + buffer.
+    est_prompt_len = sum(len(m["content"]) for m in messages) // 2 + 100
+    safe_max_tokens = min(512, max_context_len - est_prompt_len)
+
+    if safe_max_tokens <= 0:
+        logging.warning("Context length maximum reached! Truncating step execution.")
+        return "", True, 0, 0.0
+
     start_time = time.perf_counter()
     response = client.chat.completions.create(
         model=get_model(model_size),
         messages=messages,
         temperature=0.6, top_p=0.95, # https://huggingface.co/Qwen/QwQ-32B#usage-guidelines
-        max_tokens=512,
+        max_tokens=safe_max_tokens,
         stop=[stop_token],
         extra_body=extra_body,
+        stream=True,
+        stream_options={"include_usage": True}
     )
 
+    step_str = ""
+    num_output_tokens = 0
+    for chunk in response:
+        if chunk.choices and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
+            content = chunk.choices[0].delta.content
+            if not quiet:
+                print(content, end="", flush=True)
+            step_str += content
+        if hasattr(chunk, "usage") and chunk.usage:
+            num_output_tokens = chunk.usage.completion_tokens
+    
+    if not quiet:
+        print("\n", flush=True) # Ensure newline after streaming finishes
+
     elapsed = time.perf_counter() - start_time
-    step_str = response.choices[0].message.content
-    # num_input_tokens = response.usage.prompt_tokens
-    num_output_tokens = response.usage.completion_tokens
     # finished = "boxed" in step_str
     finished = any([x in step_str for x in ["boxed", "Answer:", "ANSWER:"]])
     
@@ -122,6 +184,12 @@ def get_score(args, problem, steps_so_far, model_size="32b", options=None):
         {"role": "user", "content": "Evaluate the last reasoning step solely based on factual correctness and logical validity. Ignore style, phrasing, or overall usefulness—only judge whether the step is objectively correct and logically follows from prior steps. Assign a score from 0 to 9."},
         {"role": "assistant", "content": "<think>I think the quality score is: "},
     ]
+
+    max_context_len = 8192
+    est_prompt_len = sum(len(m["content"]) for m in messages) // 2 + 100
+    if est_prompt_len >= max_context_len:
+        logging.warning("Score func: Context length maximum reached!")
+        return 0, "", 0.0
     
     start_time = time.perf_counter()
     response = client.chat.completions.create(
@@ -204,8 +272,10 @@ parser.add_argument("--score_method", type=str, choices=["greedy", "average"], d
                     help="Scoring method")
 parser.add_argument("--output_dir", type=str, default="/data2/ruipan/specreason/playground", 
                     help="Where result pickle files will be written to")
-parser.add_argument("--first_n_steps_base_model", type=int, default=0, 
-                    help="First n steps use base model only")                    
+parser.add_argument("--first_n_steps_base_model", type=int, default=0,
+                    help="First n steps use base model only")
+parser.add_argument("--quiet", action="store_true", default=False,
+                    help="Suppress streaming output (for headless/service mode)")
 args, _ = parser.parse_known_args()
 
 if not os.path.exists(args.output_dir):
@@ -245,7 +315,7 @@ try:
         warning_flag = False
         step_time = 0
         if step_id < args.first_n_steps_base_model:  # First n steps use base model
-            base_model_step, finished, num_output_tokens_base, base_model_time = generate_new_step(problem, steps_so_far, "32b", options=options)
+            base_model_step, finished, num_output_tokens_base, base_model_time = generate_new_step(problem, steps_so_far, "32b", options=options, quiet=args.quiet)
 
             small_model_step, num_output_tokens_small, small_model_time = None, None, None
             score, justification, eval_time = None, None, None
@@ -255,7 +325,7 @@ try:
 
         else:
             # 1. generate a reasoning step using a small model
-            step_str, finished, num_output_tokens, small_model_time = generate_new_step(problem, steps_so_far, "1.5b", options=options)
+            step_str, finished, num_output_tokens, small_model_time = generate_new_step(problem, steps_so_far, "1.5b", options=options, quiet=args.quiet)
             small_model_step, num_output_tokens_small = step_str, num_output_tokens
             step_time += small_model_time
 
@@ -269,21 +339,39 @@ try:
                 base_model_step, num_output_tokens_base, base_model_time = None, None, None
             else:
                 logging.info(f"[Step {step_id}] score {score} rejected, falling back to base model")
-                step_str, finished, num_output_tokens, base_model_time = generate_new_step(problem, steps_so_far, "32b", options=options)
+                step_str, finished, num_output_tokens, base_model_time = generate_new_step(problem, steps_so_far, "32b", options=options, quiet=args.quiet)
                 base_model_step, num_output_tokens_base = step_str, num_output_tokens
                 step_time += base_model_time
             # NOTE(ruipan): potential optimization is to pipeline the decoding of these two models rather than sequentially
             
-            if "</think>" in step_str and not any([x in step_str for x in ["boxed", "Answer:", "ANSWER:"]]):
-                # FIXME(ruipan): handles a very rare edge case of generating a stop thinking token midway through answering.
-                # Although it could be that thinking finished, but the last step didn't format the answer with \boxed{}
-                logging.warning(f"Warning: step_str had a </think>, removing. {step_str}")
+            
+            # Remove any </think> tag regardless of whether we have boxed or not.
+            # If the model produced finished tags but didn't actually finish (e.g. incorrect answer),
+            # we need to ensure the chat template doesn't crash when we continue generating.
+            if "</think>" in step_str:
+                if "boxed" not in step_str:
+                    logging.warning(f"Warning: step_str had a </think>, removing. {step_str}")
                 step_str = step_str.replace("</think>", "")
                 warning_flag = True
             
             # 4. repeat until an answer gets generated in the response
             steps_so_far.append(step_str)
             logging.info(f"[Step {step_id}] final step_str: {step_str}")
+
+        is_correct = None
+        candidate_answer = extract_boxed(step_str)
+        verification_time = 0
+        if candidate_answer is not None:
+            logging.info(f"[Step {step_id}] Found candidate answer \\boxed{{{candidate_answer}}}. Verifying with base model...")
+            is_correct, verification_time = verify_candidate_answer(problem, candidate_answer, "32b", options=options)
+            step_time += verification_time
+            if is_correct:
+                logging.info(f"[Step {step_id}] Base model verified answer as YES. Stopping.")
+                finished = True
+            else:
+                logging.info(f"[Step {step_id}] Base model rejected answer (NO). Continuing generation.")
+                is_correct = False
+                finished = False
         
         metadata = {
             "step_id": step_id,
@@ -299,6 +387,8 @@ try:
             "final_num_output_tokens": num_output_tokens_base if num_output_tokens_base is not None else num_output_tokens_small,
             "step_time": step_time,
             "justification": justification,
+            "candidate_answer": candidate_answer,
+            "is_correct": is_correct,
         }
         if warning_flag:
             metadata["warning"] = "step_str had a </think>"

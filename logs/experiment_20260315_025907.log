@@ -1,0 +1,30 @@
+2026-03-15 02:59:07 [INFO] Run log:   /home/ruthvik/specreason/logs/experiment_20260315_025907.log
+2026-03-15 02:59:07 [INFO] Error log: /home/ruthvik/specreason/logs/experiment_errors.log
+2026-03-15 02:59:07 [INFO] ======================================================================
+2026-03-15 02:59:07 [INFO] SpecReason AIME Experiment Runner
+2026-03-15 02:59:07 [INFO] ======================================================================
+2026-03-15 02:59:07 [INFO] Problems:        [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+2026-03-15 02:59:07 [INFO] Repeats (k):     16
+2026-03-15 02:59:07 [INFO] Total runs:      480
+2026-03-15 02:59:07 [INFO] Score threshold: 7.0
+2026-03-15 02:59:07 [INFO] Score method:    greedy
+2026-03-15 02:59:07 [INFO] Token budget:    8192
+2026-03-15 02:59:07 [INFO] Output dir:      /home/ruthvik/specreason/results
+2026-03-15 02:59:07 [INFO] Timeout/run:     1800s
+2026-03-15 02:59:07 [INFO] ======================================================================
+2026-03-15 02:59:07 [INFO] Both vLLM servers are healthy.
+2026-03-15 02:59:07 [INFO] 
+2026-03-15 02:59:07 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 02:59:07 [INFO] PROBLEM 60  (1/30)
+2026-03-15 02:59:07 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 02:59:07 [INFO] [60/0] Starting run ...
+2026-03-15 02:59:07 [DEBUG] [60/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 60 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:00:02 [INFO] [60/0] Done in 54.19s | correct=False | steps=98 | accepted=80 | rejected=18 | tokens=1969 | stop=finished
+2026-03-15 03:00:02 [INFO] [60/1] Starting run ...
+2026-03-15 03:00:02 [DEBUG] [60/1] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 60 --repeat_id 1 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:00:48 [INFO] [60/1] Done in 45.98s | correct=False | steps=92 | accepted=87 | rejected=5 | tokens=2283 | stop=finished
+2026-03-15 03:00:48 [INFO] [60/2] Starting run ...
+2026-03-15 03:00:48 [DEBUG] [60/2] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 60 --repeat_id 2 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet
+2026-03-15 03:01:19 [INFO] [60/2] Done in 31.39s | correct=False | steps=57 | accepted=47 | rejected=10 | tokens=1017 | stop=finished
+2026-03-15 03:01:19 [INFO] [60/3] Starting run ...
+2026-03-15 03:01:19 [DEBUG] [60/3] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 60 --repeat_id 3 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir /home/ruthvik/specreason/results --quiet

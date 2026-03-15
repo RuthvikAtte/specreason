@@ -1,0 +1,58 @@
+# SpecReason AIME Experiment — systemd user service
+#
+# SETUP (one time):
+#   mkdir -p ~/.config/systemd/user
+#   cp specreason-experiment.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#
+# USAGE:
+#   systemctl --user start   specreason-experiment   # start
+#   systemctl --user stop    specreason-experiment   # stop
+#   systemctl --user status  specreason-experiment   # status
+#   journalctl --user -u specreason-experiment -f    # live journal
+#
+# NOTES:
+#   - Both vLLM servers must be running before starting this service.
+#     Start them manually (or create separate vllm-32b.service /
+#     vllm-1.5b.service units and add them to Wants= / After= below).
+#   - Restart=on-failure is safe because run_experiment.py skips runs
+#     whose pickle files already exist (idempotent resume).
+#   - Adjust ExecStart paths if your conda installation is elsewhere.
+
+[Unit]
+Description=SpecReason AIME Experiment Runner
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ruthvik/specreason
+
+# Activate conda env then launch the experiment runner.
+# Edit the conda path if miniconda3/anaconda3/miniforge3 differs.
+ExecStart=/usr/bin/python3 -u /home/ruthvik/specreason/run_experiment.py \
+        --dataset_name aime \
+        --k 16 \
+        --output_dir /home/ruthvik/specreason/results \
+        --logs_dir  /home/ruthvik/specreason/logs \
+        --score_threshold 7.0 \
+        --score_method greedy \
+        --token_budget 8192 \
+        --first_n_steps_base_model 0 \
+        --timeout_per_run 1800
+
+# Restart on failure; the resume logic in run_experiment.py makes this safe.
+Restart=on-failure
+RestartSec=60
+
+# Allow up to 24 hours — 480 runs, up to 30 min each worst case.
+TimeoutStartSec=infinity
+TimeoutStopSec=60
+
+# Log stdout/stderr to the systemd journal (view with journalctl).
+# run_experiment.py also writes its own log files under logs/.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=specreason-experiment
+
+[Install]
+WantedBy=default.target
