@@ -430,14 +430,18 @@ with tab_dashboard:
                     text=f"{done_runs} / {total_runs} runs  ({done_probs}/{total_probs} problems)")
 
         # Overall accuracy
-        overall_acc = exp.get("overall_accuracy")
-        total_correct = exp.get("total_correct", 0)
+        overall_acc_mv  = exp.get("overall_accuracy_mathverify") or exp.get("overall_accuracy")
+        overall_acc_llm = exp.get("overall_accuracy_llm")
+        total_correct   = exp.get("total_correct_mathverify") or exp.get("total_correct", 0)
         agg = exp.get("aggregate", {})
 
         ov_cols = st.columns(5)
-        ov_cols[0].metric("Overall Accuracy",
-                           f"{overall_acc:.1%}" if overall_acc is not None else "—",
-                           help=f"{total_correct} correct out of {done_runs} completed runs")
+        acc_label = (f"{overall_acc_mv:.1%}" if overall_acc_mv is not None else "—")
+        if overall_acc_llm is not None:
+            acc_label += f"  *(LLM: {overall_acc_llm:.1%})*"
+        ov_cols[0].metric("Overall Accuracy (mathverify)",
+                           f"{overall_acc_mv:.1%}" if overall_acc_mv is not None else "—",
+                           help=f"LLM verifier: {overall_acc_llm:.1%}" if overall_acc_llm else "Run recompute_accuracy.py for math_verify scores")
         ov_cols[1].metric("Avg Tokens / run",
                            f"{agg.get('total_tokens', '—'):.0f}" if agg.get('total_tokens') else "—")
         ov_cols[2].metric("Avg Time / run",
@@ -457,8 +461,8 @@ with tab_dashboard:
             rows.append({
                 "Problem": int(pid_str),
                 "Runs Done": pdata.get("completed_runs", 0),
-                "Correct": pdata.get("correct_count", 0),
-                "Accuracy": pdata.get("accuracy"),
+                "Acc (mathverify)": pdata.get("accuracy_mathverify") or pdata.get("accuracy"),
+                "Acc (LLM)": pdata.get("accuracy_llm"),
                 "Avg Tokens": avgs.get("total_tokens"),
                 "Avg Steps": avgs.get("total_steps"),
                 "Avg Accepted": avgs.get("accepted_steps"),
@@ -478,19 +482,33 @@ with tab_dashboard:
             def fmt_f1(v):
                 return f"{v:.1f}" if v is not None else "—"
 
-            styled = (df.style
-                .format({
-                    "Accuracy":       fmt_pct,
+            def color_accuracy(val):
+                if val is None or val != val:
+                    return ""
+                r = int(255 * (1 - val))
+                g = int(255 * val)
+                return f"background-color: rgb({r},{g},80)"
+
+            def color_accept(val):
+                if val is None or val != val:
+                    return ""
+                b = int(80 + 175 * val)
+                return f"background-color: rgb(80,80,{b})"
+
+            acc_cols = [c for c in ["Acc (mathverify)", "Acc (LLM)"] if c in df.columns]
+            styled = df.style.format({
+                    "Acc (mathverify)": fmt_pct,
+                    "Acc (LLM)":       fmt_pct,
                     "Avg Accept Rate": fmt_pct,
-                    "Avg Tokens":     fmt_f1,
-                    "Avg Steps":      fmt_f1,
-                    "Avg Accepted":   fmt_f1,
-                    "Avg Rejected":   fmt_f1,
-                    "Avg Time (s)":   fmt_f1,
-                })
-                .background_gradient(subset=["Accuracy"], cmap="RdYlGn", vmin=0, vmax=1)
-                .background_gradient(subset=["Avg Accept Rate"], cmap="Blues", vmin=0, vmax=1)
-            )
+                    "Avg Tokens":      fmt_f1,
+                    "Avg Steps":       fmt_f1,
+                    "Avg Accepted":    fmt_f1,
+                    "Avg Rejected":    fmt_f1,
+                    "Avg Time (s)":    fmt_f1,
+                }, na_rep="—")
+            for col in acc_cols:
+                styled = styled.applymap(color_accuracy, subset=[col])
+            styled = styled.applymap(color_accept, subset=["Avg Accept Rate"])
             st.dataframe(styled, use_container_width=True, hide_index=True)
 
         # ── Aggregate token breakdown bar chart ───────────────────────────────

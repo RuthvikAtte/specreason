@@ -1,0 +1,665 @@
+[{'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.17891020886600018,
+  'final_num_output_tokens': 124,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 124,
+  'score': 8,
+  'small_model_step': 'Okay, let me try to solve this problem step by step. '
+                      'So, Aya walks 9 kilometers every morning. When she '
+                      'walks at a speed of s kilometers per hour, it takes her '
+                      '4 hours, which includes time in the coffee shop. Then, '
+                      'when she increases her speed to s + 2 kilometers per '
+                      'hour, it takes her 2 hours and 24 minutes, still '
+                      'including the same t minutes in the coffee shop. The '
+                      'question is, if she walks at s + 1/2 km/h, how many '
+                      'minutes will her walk take, including the t minutes in '
+                      'the coffee shop.',
+  'small_model_time': 0.7817128309980035,
+  'step_id': 0,
+  'step_str': 'Okay, let me try to solve this problem step by step. So, Aya '
+              'walks 9 kilometers every morning. When she walks at a speed of '
+              's kilometers per hour, it takes her 4 hours, which includes '
+              'time in the coffee shop. Then, when she increases her speed to '
+              's + 2 kilometers per hour, it takes her 2 hours and 24 minutes, '
+              'still including the same t minutes in the coffee shop. The '
+              'question is, if she walks at s + 1/2 km/h, how many minutes '
+              'will her walk take, including the t minutes in the coffee shop.',
+  'step_time': 0.9606230398640037},
+ {'base_model_step': 'Hmm, so first, let me parse the problem again to make '
+                     'sure I understand all the details. The key points here '
+                     'are that the total time includes both the walking time '
+                     'and the time spent in the coffee shop (t minutes). The '
+                     'distance of the walk is fixed at 9 km. The two different '
+                     'speeds given result in different total times (including '
+                     't). We need to find the total time when her speed is s + '
+                     '1/2.',
+  'base_model_time': 2.2669914988800883,
+  'candidate_answer': None,
+  'eval_time': 0.14566346304491162,
+  'final_num_output_tokens': 90,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '5',
+  'num_output_tokens_base': 90,
+  'num_output_tokens_small': 87,
+  'score': 5,
+  'small_model_step': 'Alright, let me break this down. First, when she walks '
+                      'at speed s km/h, the total time is 4 hours, which '
+                      'includes t minutes in the coffee shop. Similarly, when '
+                      'her speed is s + 2 km/h, the total time is 2 hours and '
+                      '24 minutes, still including t minutes. So, the '
+                      'difference in total time between the two speeds is the '
+                      'time saved in the coffee shop.',
+  'small_model_time': 0.4608896719291806,
+  'step_id': 1,
+  'step_str': 'Hmm, so first, let me parse the problem again to make sure I '
+              'understand all the details. The key points here are that the '
+              'total time includes both the walking time and the time spent in '
+              'the coffee shop (t minutes). The distance of the walk is fixed '
+              'at 9 km. The two different speeds given result in different '
+              'total times (including t). We need to find the total time when '
+              'her speed is s + 1/2.',
+  'step_time': 2.8735446338541806},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14105288102291524,
+  'final_num_output_tokens': 19,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 19,
+  'score': 8,
+  'small_model_step': "Alright, so let's break it down. Let me define some "
+                      'variables. Let’s denote:',
+  'small_model_time': 0.19317179010249674,
+  'step_id': 2,
+  'step_str': "Alright, so let's break it down. Let me define some variables. "
+              'Let’s denote:',
+  'step_time': 0.334224671125412},
+ {'base_model_step': "- s = Aya's walking speed in km/h when she takes 4 hours "
+                     'total.\n'
+                     '- t = time spent in the coffee shop, in minutes. Wait, '
+                     'but in the problem statement, t is in minutes, so maybe '
+                     'I should convert everything to hours or minutes to be '
+                     "consistent? Hmm, that's an important point. Since time "
+                     'is given in hours and minutes, perhaps converting '
+                     'everything into hours might be better, or maybe minutes. '
+                     'Let me see.',
+  'base_model_time': 3.6521790251135826,
+  'candidate_answer': None,
+  'eval_time': 0.14769291691482067,
+  'final_num_output_tokens': 93,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '0',
+  'num_output_tokens_base': 93,
+  'num_output_tokens_small': 31,
+  'score': 0,
+  'small_model_step': '- s: her walking speed in km/h.\n'
+                      '- t: time spent in the coffee shop in minutes.\n'
+                      '- t_w: walking time in hours.',
+  'small_model_time': 0.23945265216752887,
+  'step_id': 3,
+  'step_str': "- s = Aya's walking speed in km/h when she takes 4 hours "
+              'total.\n'
+              '- t = time spent in the coffee shop, in minutes. Wait, but in '
+              'the problem statement, t is in minutes, so maybe I should '
+              'convert everything to hours or minutes to be consistent? Hmm, '
+              "that's an important point. Since time is given in hours and "
+              'minutes, perhaps converting everything into hours might be '
+              'better, or maybe minutes. Let me see.',
+  'step_time': 4.039324594195932},
+ {'base_model_step': 'Let me think in terms of hours first. The problem '
+                     'mentions 4 hours total, which is straightforward, and 2 '
+                     'hours and 24 minutes, which is 2.4 hours. Wait, 24 '
+                     'minutes is 0.4 hours? Wait, 24 minutes is 24/60 = 0.4 '
+                     'hours, yes. So 2 hours 24 minutes is 2.4 hours. '
+                     'Alternatively, maybe working in minutes would be better? '
+                     "Let's see.",
+  'base_model_time': 5.361875147093087,
+  'candidate_answer': None,
+  'eval_time': 0.1501681529916823,
+  'final_num_output_tokens': 103,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '5',
+  'num_output_tokens_base': 103,
+  'num_output_tokens_small': 72,
+  'score': 5,
+  'small_model_step': 'Wait, the initial total time when walking at s km/h is '
+                      '4 hours. But this includes t minutes in the coffee '
+                      'shop. Similarly, when she walks at s + 2 km/h, her '
+                      'total time is 2 hours and 24 minutes, which includes t '
+                      'minutes in the coffee shop. So, t is the same in both '
+                      'cases.',
+  'small_model_time': 0.40702178492210805,
+  'step_id': 4,
+  'step_str': 'Let me think in terms of hours first. The problem mentions 4 '
+              'hours total, which is straightforward, and 2 hours and 24 '
+              'minutes, which is 2.4 hours. Wait, 24 minutes is 0.4 hours? '
+              'Wait, 24 minutes is 24/60 = 0.4 hours, yes. So 2 hours 24 '
+              'minutes is 2.4 hours. Alternatively, maybe working in minutes '
+              "would be better? Let's see.",
+  'step_time': 5.919065085006878},
+ {'base_model_step': "Alternatively, maybe it's better to use hours for the "
+                     'time taken to walk, since speed is in km per hour, so '
+                     'time to walk would be distance divided by speed, which '
+                     'is in hours. Then, adding the t minutes as a separate '
+                     'component. But then, since t is in minutes, we need to '
+                     'convert it to hours or convert the walking time to '
+                     'minutes? Hmm, maybe converting all time to hours is '
+                     'better. Let me try that.',
+  'base_model_time': 4.548282331088558,
+  'candidate_answer': None,
+  'eval_time': 0.15399232599884272,
+  'final_num_output_tokens': 91,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '0',
+  'num_output_tokens_base': 91,
+  'num_output_tokens_small': 87,
+  'score': 0,
+  'small_model_step': 'If I use hours, the total time is 4 hours, which is '
+                      '4*60 = 240 minutes. The other time is 2 hours 24 '
+                      'minutes, which is 2*60 + 24 = 144 minutes. So, the '
+                      'total time when walking at s + 2 km/h is 144 minutes, '
+                      'which includes t minutes in the coffee shop.',
+  'small_model_time': 0.48775896220467985,
+  'step_id': 5,
+  'step_str': "Alternatively, maybe it's better to use hours for the time "
+              'taken to walk, since speed is in km per hour, so time to walk '
+              'would be distance divided by speed, which is in hours. Then, '
+              'adding the t minutes as a separate component. But then, since t '
+              'is in minutes, we need to convert it to hours or convert the '
+              'walking time to minutes? Hmm, maybe converting all time to '
+              'hours is better. Let me try that.',
+  'step_time': 5.19003361929208},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.10514949401840568,
+  'final_num_output_tokens': 6,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '9',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 6,
+  'score': 9,
+  'small_model_step': "So, let's denote:",
+  'small_model_time': 0.14264103886671364,
+  'step_id': 6,
+  'step_str': "So, let's denote:",
+  'step_time': 0.24779053288511932},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.16912054712884128,
+  'final_num_output_tokens': 103,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 103,
+  'score': 7,
+  'small_model_step': '- Walking speed at first: s km/h\n'
+                      '- Walking speed second: s + 2 km/h\n'
+                      '- Time when walking at s km/h: 4 hours total, including '
+                      't minutes\n'
+                      '- Time when walking at s + 2 km/h: 2 hours 24 minutes '
+                      'total, which is 2.4 hours\n'
+                      '- So, the time she spends walking in both cases is 4 - '
+                      't/60 hours and 2.4 - t/60 hours, respectively.',
+  'small_model_time': 0.549690050072968,
+  'step_id': 7,
+  'step_str': '- Walking speed at first: s km/h\n'
+              '- Walking speed second: s + 2 km/h\n'
+              '- Time when walking at s km/h: 4 hours total, including t '
+              'minutes\n'
+              '- Time when walking at s + 2 km/h: 2 hours 24 minutes total, '
+              'which is 2.4 hours\n'
+              '- So, the time she spends walking in both cases is 4 - t/60 '
+              'hours and 2.4 - t/60 hours, respectively.',
+  'step_time': 0.7188105972018093},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.15202084300108254,
+  'final_num_output_tokens': 77,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 77,
+  'score': 8,
+  'small_model_step': 'Wait, that might complicate things. Alternatively, '
+                      "maybe it's better to separate the walking time from the "
+                      'coffee shop time. So, when she walks at speed s, the '
+                      'total time is walking time plus coffee shop time. '
+                      'Similarly, when she walks at s + 2, the total time is '
+                      'walking time plus t minutes, which is 2 hours and 24 '
+                      'minutes.',
+  'small_model_time': 0.4446347961202264,
+  'step_id': 8,
+  'step_str': "Wait, that might complicate things. Alternatively, maybe it's "
+              'better to separate the walking time from the coffee shop time. '
+              'So, when she walks at speed s, the total time is walking time '
+              'plus coffee shop time. Similarly, when she walks at s + 2, the '
+              'total time is walking time plus t minutes, which is 2 hours and '
+              '24 minutes.',
+  'step_time': 0.5966556391213089},
+ {'base_model_step': 'So, let me formalize this with equations. Let me denote:',
+  'base_model_time': 0.8166376168373972,
+  'candidate_answer': None,
+  'eval_time': 0.14023423404432833,
+  'final_num_output_tokens': 14,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '5',
+  'num_output_tokens_base': 14,
+  'num_output_tokens_small': 6,
+  'score': 5,
+  'small_model_step': 'Let me formalize this:',
+  'small_model_time': 0.13280207803472877,
+  'step_id': 9,
+  'step_str': 'So, let me formalize this with equations. Let me denote:',
+  'step_time': 1.0896739289164543},
+ {'base_model_step': 'Let’s let T1 be the total time at speed s: 4 hours. This '
+                     'includes walking time plus t minutes.',
+  'base_model_time': 1.4142382070422173,
+  'candidate_answer': None,
+  'eval_time': 0.11968861613422632,
+  'final_num_output_tokens': 25,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '1',
+  'num_output_tokens_base': 25,
+  'num_output_tokens_small': 15,
+  'score': 1,
+  'small_model_step': 'Let W be the walking time in hours when she walks at '
+                      'speed s.',
+  'small_model_time': 0.17742285411804914,
+  'step_id': 10,
+  'step_str': 'Let’s let T1 be the total time at speed s: 4 hours. This '
+              'includes walking time plus t minutes.',
+  'step_time': 1.7113496772944927},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1363144749775529,
+  'final_num_output_tokens': 41,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 41,
+  'score': 8,
+  'small_model_step': 'Similarly, T2 is the total time at speed s + 2: 2 hours '
+                      '24 minutes, which is 2 + 24/60 = 2.4 hours.',
+  'small_model_time': 0.2862687229644507,
+  'step_id': 11,
+  'step_str': 'Similarly, T2 is the total time at speed s + 2: 2 hours 24 '
+              'minutes, which is 2 + 24/60 = 2.4 hours.',
+  'step_time': 0.4225831979420036},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14208956994116306,
+  'final_num_output_tokens': 47,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 47,
+  'score': 8,
+  'small_model_step': 'Wait, but T1 is 4 hours total, so the walking time is 4 '
+                      '- t/60 hours, and similarly, walking time at s + 2 is '
+                      '2.4 - t/60 hours.',
+  'small_model_time': 0.3068294618278742,
+  'step_id': 12,
+  'step_str': 'Wait, but T1 is 4 hours total, so the walking time is 4 - t/60 '
+              'hours, and similarly, walking time at s + 2 is 2.4 - t/60 '
+              'hours.',
+  'step_time': 0.44891903176903725},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1414105931762606,
+  'final_num_output_tokens': 48,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 48,
+  'score': 8,
+  'small_model_step': 'But wait, if the walking time is distance divided by '
+                      'speed, so for the first case, walking time is 9 / s '
+                      'hours, and for the second case, walking time is 9 / (s '
+                      '+ 2) hours.',
+  'small_model_time': 0.30541719286702573,
+  'step_id': 13,
+  'step_str': 'But wait, if the walking time is distance divided by speed, so '
+              'for the first case, walking time is 9 / s hours, and for the '
+              'second case, walking time is 9 / (s + 2) hours.',
+  'step_time': 0.4468277860432863},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.13989203004166484,
+  'final_num_output_tokens': 8,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 8,
+  'score': 8,
+  'small_model_step': 'So, that gives us two equations:',
+  'small_model_time': 0.14080895786173642,
+  'step_id': 14,
+  'step_str': 'So, that gives us two equations:',
+  'step_time': 0.28070098790340126},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.13972717290744185,
+  'final_num_output_tokens': 16,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 16,
+  'score': 7,
+  'small_model_step': '1) 9 / s = 4 - t / 60',
+  'small_model_time': 0.17810389515943825,
+  'step_id': 15,
+  'step_str': '1) 9 / s = 4 - t / 60',
+  'step_time': 0.3178310680668801},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14045156491920352,
+  'final_num_output_tokens': 23,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 23,
+  'score': 8,
+  'small_model_step': '2) 9 / (s + 2) = 2.4 - t / 60',
+  'small_model_time': 0.20886302180588245,
+  'step_id': 16,
+  'step_str': '2) 9 / (s + 2) = 2.4 - t / 60',
+  'step_time': 0.349314586725086},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1503570838831365,
+  'final_num_output_tokens': 15,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 15,
+  'score': 8,
+  'small_model_step': 'So, now we have two equations with two variables: s and '
+                      't.',
+  'small_model_time': 0.1736804589163512,
+  'step_id': 17,
+  'step_str': 'So, now we have two equations with two variables: s and t.',
+  'step_time': 0.3240375427994877},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.15644670696929097,
+  'final_num_output_tokens': 37,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 37,
+  'score': 8,
+  'small_model_step': 'Our goal is to find t, and then compute the total time '
+                      'when she walks at s + 0.5 km/h. The total time will be '
+                      'walking time plus t minutes.',
+  'small_model_time': 0.4211947680450976,
+  'step_id': 18,
+  'step_str': 'Our goal is to find t, and then compute the total time when she '
+              'walks at s + 0.5 km/h. The total time will be walking time plus '
+              't minutes.',
+  'step_time': 0.5776414750143886},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14088032091967762,
+  'final_num_output_tokens': 6,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 6,
+  'score': 7,
+  'small_model_step': "So, let's denote:",
+  'small_model_time': 0.1400177509058267,
+  'step_id': 19,
+  'step_str': "So, let's denote:",
+  'step_time': 0.2808980718255043},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1497182969469577,
+  'final_num_output_tokens': 19,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 19,
+  'score': 8,
+  'small_model_step': 'Equation 1: 9 / s = 4 - t / 60',
+  'small_model_time': 0.23216396709904075,
+  'step_id': 20,
+  'step_str': 'Equation 1: 9 / s = 4 - t / 60',
+  'step_time': 0.38188226404599845},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14557961793616414,
+  'final_num_output_tokens': 26,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 26,
+  'score': 8,
+  'small_model_step': 'Equation 2: 9 / (s + 2) = 2.4 - t / 60',
+  'small_model_time': 0.24785195896402,
+  'step_id': 21,
+  'step_str': 'Equation 2: 9 / (s + 2) = 2.4 - t / 60',
+  'step_time': 0.39343157690018415},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14685761695727706,
+  'final_num_output_tokens': 16,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 16,
+  'score': 8,
+  'small_model_step': 'So, we can set up these two equations and solve for s '
+                      'and t.',
+  'small_model_time': 0.1879843999631703,
+  'step_id': 22,
+  'step_str': 'So, we can set up these two equations and solve for s and t.',
+  'step_time': 0.33484201692044735},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.12512929714284837,
+  'final_num_output_tokens': 6,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 6,
+  'score': 7,
+  'small_model_step': 'Let me rewrite the equations:',
+  'small_model_time': 0.13566117198206484,
+  'step_id': 23,
+  'step_str': 'Let me rewrite the equations:',
+  'step_time': 0.2607904691249132},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14304305100813508,
+  'final_num_output_tokens': 19,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 19,
+  'score': 7,
+  'small_model_step': 'Equation 1: 9 / s = 4 - t / 60',
+  'small_model_time': 0.20017652492970228,
+  'step_id': 24,
+  'step_str': 'Equation 1: 9 / s = 4 - t / 60',
+  'step_time': 0.34321957593783736},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14949615905061364,
+  'final_num_output_tokens': 26,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 26,
+  'score': 8,
+  'small_model_step': 'Equation 2: 9 / (s + 2) = 2.4 - t / 60',
+  'small_model_time': 0.2346300098579377,
+  'step_id': 25,
+  'step_str': 'Equation 2: 9 / (s + 2) = 2.4 - t / 60',
+  'step_time': 0.38412616890855134},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.13938528997823596,
+  'final_num_output_tokens': 16,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 16,
+  'score': 7,
+  'small_model_step': 'So, if we subtract equation 2 from equation 1, we get:',
+  'small_model_time': 0.1863348400220275,
+  'step_id': 26,
+  'step_str': 'So, if we subtract equation 2 from equation 1, we get:',
+  'step_time': 0.32572013000026345},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1579020239878446,
+  'final_num_output_tokens': 69,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '9',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 69,
+  'score': 9,
+  'small_model_step': '9 / s - 9 / (s + 2) = (4 - t / 60) - (2.4 - t / 60) = 4 '
+                      '- t / 60 - 2.4 + t / 60 = 4 - 2.4 = 1.6',
+  'small_model_time': 0.42135656788013875,
+  'step_id': 27,
+  'step_str': '9 / s - 9 / (s + 2) = (4 - t / 60) - (2.4 - t / 60) = 4 - t / '
+              '60 - 2.4 + t / 60 = 4 - 2.4 = 1.6',
+  'step_time': 0.5792585918679833},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14685279806144536,
+  'final_num_output_tokens': 22,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 22,
+  'score': 7,
+  'small_model_step': 'So, 9 / s - 9 / (s + 2) = 1.6',
+  'small_model_time': 0.20294062211178243,
+  'step_id': 28,
+  'step_str': 'So, 9 / s - 9 / (s + 2) = 1.6',
+  'step_time': 0.3497934201732278},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14154383190907538,
+  'final_num_output_tokens': 22,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 22,
+  'score': 7,
+  'small_model_step': "Let me compute 9 / s - 9 / (s + 2). Let's compute this:",
+  'small_model_time': 0.2037912120576948,
+  'step_id': 29,
+  'step_str': "Let me compute 9 / s - 9 / (s + 2). Let's compute this:",
+  'step_time': 0.34533504396677017},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14828053396195173,
+  'final_num_output_tokens': 65,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 65,
+  'score': 8,
+  'small_model_step': '9 / s - 9 / (s + 2) = 9[(s + 2) - s] / [s(s + 2)] = '
+                      '9(2) / [s(s + 2)] = 18 / [s(s + 2)] = 1.6',
+  'small_model_time': 0.3712455059867352,
+  'step_id': 30,
+  'step_str': '9 / s - 9 / (s + 2) = 9[(s + 2) - s] / [s(s + 2)] = 9(2) / [s(s '
+              '+ 2)] = 18 / [s(s + 2)] = 1.6',
+  'step_time': 0.519526039948687},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.14318393799476326,
+  'final_num_output_tokens': 19,
+  'is_correct': None,
+  'is_correct_mathverify': None,
+  'justification': '8',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 19,
+  'score': 8,
+  'small_model_step': 'So, 18 / [s(s + 2)] = 1.6',
+  'small_model_time': 0.1897914579603821,
+  'step_id': 31,
+  'step_str': 'So, 18 / [s(s + 2)] = 1.6',
+  'step_time': 0.33297539595514536},
+ {'base_model_step': None,
+  'base_model_time': None,
+  'candidate_answer': None,
+  'eval_time': 0.1427363168913871,
+  'final_num_output_tokens': 19,
+  'is_correct': None,
+  'is_correct_mathverify': False,
+  'justification': '7',
+  'num_output_tokens_base': None,
+  'num_output_tokens_small': 19,
+  'score': 7,
+  'small_model_step': 'So, 18 / [s(s + 2)] = 1.6',
+  'small_model_time': 0.19253669399768114,
+  'step_id': 32,
+  'step_str': 'So, 18 / [s(s + 2)] = 1.6',
+  'step_time': 0.33527301088906825,
+  'stop_reason': 'finished'}]

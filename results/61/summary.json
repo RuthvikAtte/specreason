@@ -1,0 +1,29 @@
+{
+  "problem_id": 61,
+  "dataset": "aime",
+  "k": 16,
+  "completed_runs": 0,
+  "correct_count_mathverify": 0,
+  "accuracy_mathverify": null,
+  "correct_count_llm": 0,
+  "accuracy_llm": null,
+  "averages": {
+    "total_steps": null,
+    "forced_base_steps": null,
+    "accepted_steps": null,
+    "rejected_steps": null,
+    "acceptance_rate": null,
+    "total_tokens": null,
+    "base_tokens": null,
+    "small_tokens_accepted": null,
+    "small_tokens_rejected": null,
+    "total_time_s": null,
+    "base_model_time_s": null,
+    "small_model_time_s": null,
+    "eval_time_s": null,
+    "avg_score": null,
+    "avg_accepted_score": null,
+    "avg_rejected_score": null
+  },
+  "runs": []
+}
