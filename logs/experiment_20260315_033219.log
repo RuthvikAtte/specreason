@@ -1,0 +1,86 @@
+2026-03-15 03:32:19 [INFO] Run log:   ./logs/experiment_20260315_033219.log
+2026-03-15 03:32:19 [INFO] Error log: ./logs/experiment_errors.log
+2026-03-15 03:32:19 [INFO] ======================================================================
+2026-03-15 03:32:19 [INFO] SpecReason AIME Experiment Runner
+2026-03-15 03:32:19 [INFO] ======================================================================
+2026-03-15 03:32:19 [INFO] Problems:        [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+2026-03-15 03:32:19 [INFO] Repeats (k):     16
+2026-03-15 03:32:19 [INFO] Total runs:      480
+2026-03-15 03:32:19 [INFO] Score threshold: 7.0
+2026-03-15 03:32:19 [INFO] Score method:    greedy
+2026-03-15 03:32:19 [INFO] Token budget:    8192
+2026-03-15 03:32:19 [INFO] Output dir:      ./results
+2026-03-15 03:32:19 [INFO] Timeout/run:     1800s
+2026-03-15 03:32:19 [INFO] ======================================================================
+2026-03-15 03:32:19 [INFO] Loading ground truth for dataset: aime
+2026-03-15 03:32:20 [DEBUG] Attempting to acquire lock 139701368734336 on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:32:20 [DEBUG] Lock 139701368734336 acquired on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:32:20 [DEBUG] open file: /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a/dataset_info.json
+2026-03-15 03:32:20 [DEBUG] Attempting to release lock 139701368734336 on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:32:20 [DEBUG] Lock 139701368734336 released on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:32:20 [DEBUG] Attempting to acquire lock 139701368736592 on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:32:20 [DEBUG] Lock 139701368736592 acquired on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:32:20 [DEBUG] open file: /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a/dataset_info.json
+2026-03-15 03:32:20 [DEBUG] Attempting to release lock 139701368736592 on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:32:20 [DEBUG] Lock 139701368736592 released on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:32:20 [INFO] 
+2026-03-15 03:32:20 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:32:20 [INFO] PROBLEM 60  (1/30)
+2026-03-15 03:32:20 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:32:20 [DEBUG] [60/0] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=1.0 (1/1) | llm=0.0 (0/1) | avg_tokens=1969.0 | avg_time=49.041s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=1.0 llm=0.0 (1/1 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/1] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=1.0 (2/2) | llm=0.0 (0/2) | avg_tokens=2126.0 | avg_time=44.9315s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=1.0 llm=0.0 (2/2 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/2] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=1.0 (3/3) | llm=0.0 (0/3) | avg_tokens=1756.3333 | avg_time=38.7203s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=1.0 llm=0.0 (3/3 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/3] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=1.0 (4/4) | llm=0.0 (0/4) | avg_tokens=2756.5 | avg_time=58.6382s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=1.0 llm=0.0 (4/4 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/4] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8 (4/5) | llm=0.0 (0/5) | avg_tokens=3391.8 | avg_time=78.8978s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8 llm=0.0 (4/5 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/5] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8333 (5/6) | llm=0.0 (0/6) | avg_tokens=3231.3333 | avg_time=74.7837s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8333 llm=0.0 (5/6 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/6] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8571 (6/7) | llm=0.0 (0/7) | avg_tokens=3124.2857 | avg_time=72.1406s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8571 llm=0.0 (6/7 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/7] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.875 (7/8) | llm=0.0 (0/8) | avg_tokens=2911.25 | avg_time=67.7444s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.875 llm=0.0 (7/8 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/8] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8889 (8/9) | llm=0.0 (0/9) | avg_tokens=2869.0 | avg_time=66.8642s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8889 llm=0.0 (8/9 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/9] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.9 (9/10) | llm=0.0 (0/10) | avg_tokens=2714.1 | avg_time=63.7464s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.9 llm=0.0 (9/10 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/10] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.9091 (10/11) | llm=0.0 (0/11) | avg_tokens=2786.0909 | avg_time=63.9875s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.9091 llm=0.0 (10/11 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/11] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.9167 (11/12) | llm=0.0 (0/12) | avg_tokens=2716.4167 | avg_time=62.2792s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.9167 llm=0.0 (11/12 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/12] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8462 (11/13) | llm=0.0 (0/13) | avg_tokens=2609.7692 | avg_time=59.9512s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8462 llm=0.0 (11/13 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/13] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8571 (12/14) | llm=0.0 (0/14) | avg_tokens=2720.7857 | avg_time=62.0707s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8571 llm=0.0 (12/14 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/14] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.8667 (13/15) | llm=0.0 (0/15) | avg_tokens=2693.8 | avg_time=60.8883s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.8667 llm=0.0 (13/15 runs correct)
+2026-03-15 03:32:20 [DEBUG] [60/15] Pickle exists, skipping.
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.875 (14/16) | llm=0.0 (0/16) | avg_tokens=2686.1875 | avg_time=61.166s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.875 llm=0.0 (14/16 runs correct)
+2026-03-15 03:32:20 [INFO] Problem 60 finished in 0.1s: 16/16 runs succeeded, 0 failed/timed out
+2026-03-15 03:32:20 [INFO] [Problem 60] mathverify=0.875 (14/16) | llm=0.0 (0/16) | avg_tokens=2686.1875 | avg_time=61.166s
+2026-03-15 03:32:20 [INFO] Experiment summary updated: 1/30 problems done | mathverify=0.875 llm=0.0 (14/16 runs correct)
+2026-03-15 03:32:20 [INFO] 
+2026-03-15 03:32:20 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:32:20 [INFO] PROBLEM 61  (2/30)
+2026-03-15 03:32:20 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:32:20 [INFO] [61/0] Starting run ...
+2026-03-15 03:32:20 [DEBUG] [61/0] Command: /usr/bin/python3 -u /home/ruthvik/specreason/spec_reason.py --dataset_name aime --problem_id 61 --repeat_id 0 --score_threshold 7.0 --score_method greedy --token_budget 8192 --first_n_steps_base_model 0 --output_dir ./results --quiet

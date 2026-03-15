@@ -39,12 +39,6 @@ except ImportError:
 
 from datasets import load_dataset
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
-
 
 # ─── Ground truth loader ──────────────────────────────────────────────────────
 
@@ -283,6 +277,11 @@ def write_experiment_summary(all_summaries: list, results_dir: Path,
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
     parser = argparse.ArgumentParser(
         description="Recompute is_correct using math_verify and regenerate summaries.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,

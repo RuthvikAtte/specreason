@@ -1,0 +1,31 @@
+2026-03-15 03:31:57 [INFO] Run log:   ./logs/experiment_20260315_033157.log
+2026-03-15 03:31:57 [INFO] Error log: ./logs/experiment_errors.log
+2026-03-15 03:31:57 [INFO] ======================================================================
+2026-03-15 03:31:57 [INFO] SpecReason AIME Experiment Runner
+2026-03-15 03:31:57 [INFO] ======================================================================
+2026-03-15 03:31:57 [INFO] Problems:        [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+2026-03-15 03:31:57 [INFO] Repeats (k):     16
+2026-03-15 03:31:57 [INFO] Total runs:      480
+2026-03-15 03:31:57 [INFO] Score threshold: 7.0
+2026-03-15 03:31:57 [INFO] Score method:    greedy
+2026-03-15 03:31:57 [INFO] Token budget:    8192
+2026-03-15 03:31:57 [INFO] Output dir:      ./results
+2026-03-15 03:31:57 [INFO] Timeout/run:     1800s
+2026-03-15 03:31:57 [INFO] ======================================================================
+2026-03-15 03:31:57 [INFO] Loading ground truth for dataset: aime
+2026-03-15 03:31:58 [DEBUG] Attempting to acquire lock 139846598518592 on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:31:58 [DEBUG] Lock 139846598518592 acquired on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:31:58 [DEBUG] open file: /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a/dataset_info.json
+2026-03-15 03:31:58 [DEBUG] Attempting to release lock 139846598518592 on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:31:58 [DEBUG] Lock 139846598518592 released on /home/ruthvik/.cache/huggingface/datasets/_home_ruthvik_.cache_huggingface_datasets_HuggingFaceH4___aime_2024_default_0.0.0_2fe88a2f1091d5048c0f36abc874fb997b3dd99a.lock
+2026-03-15 03:31:58 [DEBUG] Attempting to acquire lock 139846598510528 on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:31:58 [DEBUG] Lock 139846598510528 acquired on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:31:58 [DEBUG] open file: /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a/dataset_info.json
+2026-03-15 03:31:58 [DEBUG] Attempting to release lock 139846598510528 on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:31:58 [DEBUG] Lock 139846598510528 released on /home/ruthvik/.cache/huggingface/datasets/HuggingFaceH4___aime_2024/default/0.0.0/2fe88a2f1091d5048c0f36abc874fb997b3dd99a_builder.lock
+2026-03-15 03:31:58 [INFO] 
+2026-03-15 03:31:58 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:31:58 [INFO] PROBLEM 60  (1/30)
+2026-03-15 03:31:58 [INFO] ────────────────────────────────────────────────────────────
+2026-03-15 03:31:58 [DEBUG] [60/0] Pickle exists, skipping.
+2026-03-15 03:31:58 [INFO] [Problem 60] mathverify=1.0 (1/1) | llm=0.0 (0/1) | avg_tokens=1969.0 | avg_time=49.041s

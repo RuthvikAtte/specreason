@@ -33,6 +33,8 @@ import subprocess
 import datetime
 from pathlib import Path
 
+from recompute_accuracy import recompute_run, load_ground_truth
+
 try:
     import requests as _requests_lib
     _HAS_REQUESTS = True
@@ -185,8 +187,15 @@ def compute_stats_from_pickle(pickle_path: str) -> dict:
     avg_rejected_score = (round(sum(rejected_scores) / len(rejected_scores), 4)
                           if rejected_scores else None)
 
+    # Also read mathverify result if the pickle has already been recomputed
+    is_correct_mathverify = None
+    for m in metadata_list:
+        if m.get("is_correct_mathverify") is not None:
+            is_correct_mathverify = m["is_correct_mathverify"]
+
     return {
         "is_correct": is_correct,
+        "is_correct_mathverify": is_correct_mathverify,
         "candidate_answer": candidate_answer,
         "stop_reason": stop_reason,
         "total_steps": total_steps,
@@ -320,8 +329,10 @@ def write_problem_summary(args, problem_id: int, run_results: list) -> dict:
     done = [r for r in run_results if r.get("status") in ("completed", "skipped")]
     errors = [r for r in run_results if r.get("status") not in ("completed", "skipped")]
 
-    correct = [r for r in done if r.get("is_correct") is True]
-    accuracy = round(len(correct) / len(done), 4) if done else None
+    correct_mv  = [r for r in done if r.get("is_correct_mathverify") is True]
+    correct_llm = [r for r in done if r.get("is_correct") is True]
+    accuracy_mv  = round(len(correct_mv)  / len(done), 4) if done else None
+    accuracy_llm = round(len(correct_llm) / len(done), 4) if done else None
 
     summary = {
         "problem_id": problem_id,
@@ -329,8 +340,13 @@ def write_problem_summary(args, problem_id: int, run_results: list) -> dict:
         "k": args.k,
         "completed_runs": len(done),
         "error_runs": len(errors),
-        "correct_count": len(correct),
-        "accuracy": accuracy,
+        "correct_count_mathverify": len(correct_mv),
+        "correct_count_llm": len(correct_llm),
+        "accuracy_mathverify": accuracy_mv,
+        "accuracy_llm": accuracy_llm,
+        # keep legacy field so old dashboard reads still work
+        "accuracy": accuracy_mv,
+        "correct_count": len(correct_mv),
         "averages": {key: _mean(done, key) for key in STAT_KEYS},
         "runs": sorted(run_results, key=lambda r: r["repeat_id"]),
     }
@@ -340,11 +356,10 @@ def write_problem_summary(args, problem_id: int, run_results: list) -> dict:
         json.dump(summary, f, indent=2)
 
     logging.info(
-        f"[Problem {problem_id}] Summary: accuracy={accuracy} "
-        f"({len(correct)}/{len(done)}) | "
+        f"[Problem {problem_id}] mathverify={accuracy_mv} ({len(correct_mv)}/{len(done)}) | "
+        f"llm={accuracy_llm} ({len(correct_llm)}/{len(done)}) | "
         f"avg_tokens={summary['averages']['total_tokens']} | "
-        f"avg_time={summary['averages']['total_time_s']}s | "
-        f"avg_acceptance={summary['averages']['acceptance_rate']}")
+        f"avg_time={summary['averages']['total_time_s']}s")
     return summary
 
 
@@ -354,14 +369,20 @@ def write_experiment_summary(args, all_problem_summaries: list) -> dict:
                 for r in s.get("runs", [])
                 if r.get("status") in ("completed", "skipped")]
 
-    total_correct = sum(s.get("correct_count", 0) for s in all_problem_summaries)
+    total_correct_mv  = sum(s.get("correct_count_mathverify", 0) for s in all_problem_summaries)
+    total_correct_llm = sum(s.get("correct_count_llm", 0)        for s in all_problem_summaries)
     total_done = sum(s.get("completed_runs", 0) for s in all_problem_summaries)
-    overall_accuracy = round(total_correct / total_done, 4) if total_done > 0 else None
+    overall_accuracy_mv  = round(total_correct_mv  / total_done, 4) if total_done > 0 else None
+    overall_accuracy_llm = round(total_correct_llm / total_done, 4) if total_done > 0 else None
 
     per_problem = {
         s["problem_id"]: {
-            "accuracy": s.get("accuracy"),
-            "correct_count": s.get("correct_count"),
+            "accuracy_mathverify": s.get("accuracy_mathverify"),
+            "accuracy_llm": s.get("accuracy_llm"),
+            "accuracy": s.get("accuracy_mathverify"),  # legacy
+            "correct_count_mathverify": s.get("correct_count_mathverify"),
+            "correct_count_llm": s.get("correct_count_llm"),
+            "correct_count": s.get("correct_count_mathverify"),  # legacy
             "completed_runs": s.get("completed_runs"),
             "error_runs": s.get("error_runs"),
             "averages": s.get("averages"),
@@ -386,8 +407,12 @@ def write_experiment_summary(args, all_problem_summaries: list) -> dict:
             "total_runs_done": total_done,
             "total_runs_expected": len(args.problem_ids) * args.k,
         },
-        "overall_accuracy": overall_accuracy,
-        "total_correct": total_correct,
+        "overall_accuracy_mathverify": overall_accuracy_mv,
+        "overall_accuracy_llm": overall_accuracy_llm,
+        "overall_accuracy": overall_accuracy_mv,  # legacy
+        "total_correct_mathverify": total_correct_mv,
+        "total_correct_llm": total_correct_llm,
+        "total_correct": total_correct_mv,  # legacy
         "aggregate": {key: _mean(all_runs, key) for key in STAT_KEYS},
         "per_problem": per_problem,
     }
@@ -398,8 +423,8 @@ def write_experiment_summary(args, all_problem_summaries: list) -> dict:
 
     logging.info(
         f"Experiment summary updated: {len(all_problem_summaries)}/{len(args.problem_ids)} "
-        f"problems done | overall_accuracy={overall_accuracy} "
-        f"({total_correct}/{total_done} runs correct)")
+        f"problems done | mathverify={overall_accuracy_mv} llm={overall_accuracy_llm} "
+        f"({total_correct_mv}/{total_done} runs correct)")
     return summary
 
 
@@ -468,6 +493,7 @@ def main():
         logging.error(f"spec_reason.py not found at {script_path}")
         sys.exit(1)
 
+    ground_truth = load_ground_truth(args.dataset_name)
     all_problem_summaries = []
     experiment_start = time.monotonic()
 
@@ -485,6 +511,25 @@ def main():
             result = run_single(args, problem_id, repeat_id)
             run_results.append(result)
 
+            # After every completed run, recompute accuracy with math_verify
+            # and immediately refresh both summaries so the dashboard updates.
+            if result.get("status") in ("completed", "skipped"):
+                pkl = Path(args.output_dir) / str(problem_id) / f"{repeat_id}.pickle"
+                if pkl.exists():
+                    try:
+                        recompute_run(pkl, ground_truth.get(problem_id, ""), dry_run=False)
+                        # Re-read stats with the freshly written mathverify field
+                        updated_stats = compute_stats_from_pickle(str(pkl))
+                        result.update(updated_stats)
+                        run_results[-1] = result
+                    except Exception as e:
+                        logging.error(f"[{problem_id}/{repeat_id}] recompute failed: {e}")
+
+            # Refresh problem + experiment summary after every run
+            problem_summary = write_problem_summary(args, problem_id, run_results)
+            current_summaries = [s for s in all_problem_summaries] + [problem_summary]
+            write_experiment_summary(args, current_summaries)
+
         problem_elapsed = round(time.monotonic() - problem_start, 1)
         successes = sum(1 for r in run_results
                         if r.get("status") in ("completed", "skipped"))
@@ -493,12 +538,8 @@ def main():
             f"Problem {problem_id} finished in {problem_elapsed}s: "
             f"{successes}/{args.k} runs succeeded, {failures} failed/timed out")
 
-        # Per-problem summary
         problem_summary = write_problem_summary(args, problem_id, run_results)
         all_problem_summaries.append(problem_summary)
-
-        # Incrementally update the experiment-level summary after each problem,
-        # so a crash mid-experiment still leaves a readable partial result.
         write_experiment_summary(args, all_problem_summaries)
 
     total_elapsed = round(time.monotonic() - experiment_start, 1)
