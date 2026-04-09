@@ -373,7 +373,7 @@ with tab_dashboard:
 
     dash_col1, dash_col2 = st.columns([3, 1])
     with dash_col1:
-        results_dir = st.text_input("Results directory", value="./results", key="dash_dir")
+        results_dir = st.text_input("Results directory", value="./32k_results", key="dash_dir")
     with dash_col2:
         st.write("")
         st.write("")
@@ -406,28 +406,43 @@ with tab_dashboard:
         st.caption(f"Summary last updated: {mtime.strftime('%Y-%m-%d %H:%M:%S')} ({age_str})")
 
     # ── Experiment summary ────────────────────────────────────────────────────
+
+    # Static config pulled from run_k2_32k.sh defaults — always shown
+    static_cfg = {
+        "k": 2,
+        "score_threshold": 7.0,
+        "score_method": "greedy",
+        "token_budget": 32768,
+        "first_n_steps_base_model": 0,
+    }
+
     if summary_path.exists():
         with open(summary_path) as f:
             exp = json.load(f)
+        cfg = exp.get("config", static_cfg)
+    else:
+        exp = {}
+        cfg = static_cfg
 
-        prog = exp.get("progress", {})
-        done_runs  = prog.get("total_runs_done", 0)
-        total_runs = prog.get("total_runs_expected", 480)
-        done_probs = prog.get("problems_completed", 0)
-        total_probs = prog.get("problems_total", 30)
+    prog = exp.get("progress", {})
+    done_runs  = prog.get("total_runs_done", 0)
+    total_runs = prog.get("total_runs_expected", 30 * cfg.get("k", 2))
+    done_probs = prog.get("problems_completed", 0)
+    total_probs = prog.get("problems_total", 30)
 
-        cfg = exp.get("config", {})
-        st.markdown("#### Configuration")
-        cfg_cols = st.columns(5)
-        cfg_cols[0].metric("k (repeats)", cfg.get("k", "—"))
-        cfg_cols[1].metric("Score threshold", cfg.get("score_threshold", "—"))
-        cfg_cols[2].metric("Score method", cfg.get("score_method", "—"))
-        cfg_cols[3].metric("Token budget", cfg.get("token_budget", "—"))
-        cfg_cols[4].metric("Forced base steps", cfg.get("first_n_steps_base_model", "—"))
+    st.markdown("#### Configuration")
+    cfg_cols = st.columns(5)
+    cfg_cols[0].metric("k (repeats)", cfg.get("k", "—"))
+    cfg_cols[1].metric("Score threshold", cfg.get("score_threshold", "—"))
+    cfg_cols[2].metric("Score method", cfg.get("score_method", "—"))
+    cfg_cols[3].metric("Token budget", cfg.get("token_budget", "—"))
+    cfg_cols[4].metric("Forced base steps", cfg.get("first_n_steps_base_model", "—"))
 
-        st.markdown("#### Progress")
-        st.progress(done_runs / total_runs if total_runs else 0,
-                    text=f"{done_runs} / {total_runs} runs  ({done_probs}/{total_probs} problems)")
+    st.markdown("#### Progress")
+    st.progress(done_runs / total_runs if total_runs else 0,
+                text=f"{done_runs} / {total_runs} runs  ({done_probs}/{total_probs} problems)")
+
+    if summary_path.exists():
 
         # Overall accuracy
         overall_acc_mv  = exp.get("overall_accuracy_mathverify") or exp.get("overall_accuracy")
